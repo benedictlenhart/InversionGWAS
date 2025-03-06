@@ -1,0 +1,244 @@
+---
+title: "relatedness.compare"
+output: html_document
+date: "2024-06-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+load in datata
+```{r}
+library(data.table)
+library(tidyverse)
+library(foreach)
+library(readxl)
+library(gmodels)
+
+setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/May_2024_objects/")
+ldgrm = readRDS("LDGRM")
+fullgrm = readRDS("GRM.Aug")
+
+locogrm2l = readRDS("No2LGRM")
+locogrm2r = readRDS("No2RGRM")
+locogrm3l = readRDS("No3LGRM")
+locogrm3r = readRDS("No3RGRM")
+locogrmx = readRDS("NoXGRM")
+
+#inversion status of dgrp lines
+
+```
+next we want to find a way to create a long form data table with the relatedness between lines. we want one measure of relatedness between two unique lines- no repeats, and no lines against each other. 
+
+```{r}
+#we'll try melting to start
+#convert matrix to data tabl
+ldgrm = as.data.table(ldgrm)
+ldgrm$ids = colnames(ldgrm)
+ldmelt = melt(ldgrm, id.vars = c("ids"), variable.name = "id2")
+#remove any row where id1 = id2
+#and any duplicate combo of id1 and id2
+ldmelt$id2 = as.character(ldmelt$id2)
+#remove 
+ld.r = subset(ldmelt, ids != id2 & 
+             !duplicated(cbind(pmin(ids, id2),
+                               pmax(ids, id2))))
+ld.r$method = "LDpruned"
+#now for full grm
+fullgrm = as.data.table(fullgrm)
+fullgrm$ids = colnames(fullgrm)
+fullmelt = melt(fullgrm, id.vars = c("ids"), variable.name = "id2")
+#remove any row where id1 = id2
+#and any duplicate combo of id1 and id2
+fullmelt$id2 = as.character(fullmelt$id2)
+#remove 
+full.r = subset(fullmelt, ids != id2 & 
+             !duplicated(cbind(pmin(ids, id2),
+                               pmax(ids, id2))))
+full.r$method = "Fullgrm"
+
+```
+
+For loco, we'll make a quick forloop
+
+```{r}
+chrom = c("2L", "2R", "3L" ,"3R", "X")
+locolist = list(locogrm2l, locogrm2r, locogrm3l, locogrm3r,locogrmx)
+out = foreach(f = c(1:5)) %do% {
+  #f =1
+  #now for loco
+  locogrm = as.data.table(locolist[f])
+
+locogrm$ids = colnames(locogrm)
+locomelt = melt(locogrm, id.vars = c("ids"), variable.name = "id2")
+#remove any row where id1 = id2
+#and any duplicate combo of id1 and id2
+locomelt$id2 = as.character(locomelt$id2)
+#remove 
+loco.r = subset(locomelt, ids != id2 & 
+             !duplicated(cbind(pmin(ids, id2),
+                               pmax(ids, id2))))
+loco.r$method = "locogrm"
+loco.r$chr = chrom[f]
+loco.r
+}
+loco.out = rbindlist(out)
+#now we find the median relatedness per dgrp comparison
+# loco.out$combo.id = paste(loco.out$ids, loco.out$id2, sep = "-")
+# loco.out = loco.out %>% 
+#   group_by(ids, id2, method)%>% 
+#   summarise(value = median(value))
+
+#create one for the no grm- same thing but all zeros
+no.grm = loco.out
+no.grm$value = 0
+no.grm$method = "No_GRM"
+             
+```
+now bind and graph the data
+
+```{r}
+colnames(no.grm)
+colnames(loco.out)
+colnames(full.r)
+colnames(ld.r)
+
+talldata = rbind( full.r, ld.r)
+talldata$chr = "2L"
+talldata = rbind(talldata, loco.out, no.grm)
+#make a box plot with errorbars
+talldata %>% 
+  group_by(method) %>% 
+   summarise(mean = ci(value)[1],
+            uci = ci(value)[2],
+            lci = ci(value)[3] ) %>% 
+ggplot(
+  aes(x = method,
+      y = mean,
+      ymin = lci,
+      ymax = uci)
+)+
+  geom_bar(stat = "identity") + 
+   geom_errorbar(width = 0.1, position=position_dodge(width = 0.5), show.legend = F) 
+  
+```
+
+now try a histogram like in the huang paper
+```{r}
+ggplot(talldata, aes(x = value))+ geom_histogram(
+  bins = 80
+)+
+  facet_grid(method~., scales = "free")+
+  xlim(-0.075, 0.15)
+```
+load in the inversion data, and filter to only include pairwise comparison between lines with the same karyotype
+```{r}
+
+inv.dt = read_xlsx("inversion.xlsx")
+#fix up inv.dt data prior to joining
+merge.dt = inv.dt %>% 
+  select(c(`DGRP Line`, `In(2L)t`, `In(2R)NS`, `In(3R)P`, `In(3R)K`, `In(3R)Mo`)) %>% 
+  mutate(`DGRP Line` = gsub("DGRP", "line", `DGRP Line`)) %>% 
+  rename("ids" = "DGRP Line") %>% 
+  pivot_longer(
+    cols = !ids,
+    names_to = "inversion",
+    values_to = "status"
+  ) %>% 
+  as.data.table(.)
+mergedata = merge(talldata, merge.dt, by = c("ids"), allow.cartesian = T)
+#now we merge them again based on second id
+merge.dt2 = merge.dt %>% 
+  rename("id2" = "ids")
+mergedata = merge(mergedata, merge.dt2, by = "id2", allow.cartesian = T)#note, inverstion status of id"1" is now marked byx, id2 is marked by y
+
+#for now, focus on pairwise combinations where the lines are the same karyotype, split across each inversion
+samedata = mergedata %>% 
+  group_by(inversion.x) %>% 
+  filter(inversion.x == inversion.y) %>% #compare across the same inversion
+  filter(status.x == status.y) %>%#filter to the same inversion type
+  as.data.table(.)
+
+
+```
+it turns out the above approach- bracketed comparisions to only show flys of the same karyotype- doesn't show anything. lets' try to compare standard(fully un inverted) to comparisons between flies homozgous for the same inversion. for now, these inverted flies can have other inversions present as well. 
+```{r}
+#we want list of dgrp lines that are homozgyous for standard, and then each inversion.
+head(inv.dt)
+head(merge.dt)
+st.dt = inv.dt %>% 
+  select(c(`DGRP Line`, `In(2L)t`, `In(2R)NS`, `In(3R)P`, `In(3R)K`, `In(3R)Mo`)) %>% 
+  mutate(`DGRP Line` = gsub("DGRP", "line", `DGRP Line`)) %>% 
+  filter( `In(2L)t` == "ST",
+          `In(2R)NS` == "ST",
+          `In(3R)P` == "ST",
+          `In(3R)K` == "ST",
+          `In(3R)Mo` == "ST",
+  )
+st.lines = as.vector(st.dt[[1]])#list of lines with no major inversions
+st.data = talldata %>% 
+  filter(ids %in% st.lines) %>% 
+  filter(id2 %in% st.lines) %>% 
+  mutate(inversion.x = "Standard")
+#do do reverse for major inversions
+
+
+#now we'll get data for comparisions between two lines homozygous for the same inversion
+inv.data = mergedata %>% 
+  filter(inversion.x == inversion.y) %>%
+  filter(status.x == "INV") %>% 
+  filter(status.y == "INV") %>% 
+  select(!c(inversion.y, status.x, status.y)) %>% 
+  as.data.table(.)
+inv.bind = rbind(st.data, inv.data)
+```
+
+now make density plots of different gif relatedness
+```{r}
+#make a seperate data set that finds the mean relatedness per method/inversion
+inv.filter = inv.bind %>% 
+  filter(method == "locogrm")
+mean = inv.filter %>% 
+  group_by(method, inversion.x, chr) %>% 
+  summarise(mean.val = mean(value))
+saveRDS(inv.bind, "relatedness.inversion.grm")
+inv.bind2 = readRDS("relatedness.inv")
+ggplot(inv.filter, aes(x = value, color = inversion.x)) + geom_density() +
+  geom_vline(data=mean, aes(xintercept=mean.val, color=inversion.x),
+             linetype="dashed")+
+  facet_grid(chr~., scale = "free")+
+  xlim(-0.075, 0.25)+
+  xlab("relatedness")+
+  ggtitle("Relatedness using Loco GRM")
+  
+```
+
+now we'll try to make a new version of the density plots, but faceted out by the loco, instead of averaging them.
+
+```{r}
+chrom = c("2L", "2R", "3L" ,"3R", "X")
+locolist = list(locogrm2l, locogrm2r, locogrm3l, locogrm3l,locogrmx)
+out = foreach(f = c(1:5)) %do% {
+  #f =1
+  #now for loco
+  locogrm = as.data.table(locolist[f])
+
+locogrm$ids = colnames(locogrm)
+locomelt = melt(locogrm, id.vars = c("ids"), variable.name = "id2")
+#remove any row where id1 = id2
+#and any duplicate combo of id1 and id2
+locomelt$id2 = as.character(locomelt$id2)
+#remove 
+loco.r = subset(locomelt, ids != id2 & 
+             !duplicated(cbind(pmin(ids, id2),
+                               pmax(ids, id2))))
+loco.r$method = "locogrm"
+loco.r$chr = chrom[f]
+loco.r
+}
+loco.out = rbindlist(out)
+#now we find the median relatedness per dgrp comparison
+loco.out$combo.id = paste(loco.out$ids, loco.out$id2, sep = "-")
+```
+

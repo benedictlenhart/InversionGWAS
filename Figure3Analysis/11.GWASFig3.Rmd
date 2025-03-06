@@ -1,0 +1,138 @@
+---
+title: "gwas.fig3"
+output: html_document
+date: "2024-07-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+load in data 
+```{r}
+library(data.table)
+library(tidyverse)
+library(foreach)
+setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/July_2024_objects/")
+pcadata = readRDS("pcadata")
+modeldata = readRDS("pcamodeldata2")
+rel.data = readRDS("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/May_2024_objects/relatedness.inversion.grm")
+
+```
+first graph is pcas- show PC1 and PC2 across the different methods
+
+```{r}
+pcadata2 = pcadata %>% 
+  filter(method %in% c("full", "ld", "loco")) %>% 
+ # mutate(inversion = gsub("In", "", inversion)) %>% 
+  filter(inversion %in% c("In(2L)t","In(2R)NS", "In(3R)K","In(3R)Mo","In(3R)P"))
+colors = c("blue", "green", "red")
+w1 =ggplot(pcadata2, aes(pc1, pc2, color = inv.st)) +
+  geom_point() +
+  scale_color_manual(values = colors)+
+  facet_grid(inversion~method)+
+    scale_x_continuous(n.breaks = 3)+
+    scale_y_continuous(n.breaks = 3)+
+    theme_bw(base_size = 15)
+w1
+```
+
+second plot is the the rsqared of models looking at how uch of the variance is eplained by inversion
+
+```{r}
+modeldata2 = modeldata %>% 
+  filter(method %in% c("full", "ld", "loco")) %>% 
+    #mutate(inversion = gsub("In", "", inversion)) %>% 
+  filter(inversion != "In(3L)P") %>% 
+  mutate(pcas = gsub("rsquared","PCA",pcas)) %>% 
+  mutate(method = case_when(method == "full" ~ "Full",
+                            method == "ld" ~ "LD",
+                            method == "loco"~"LOCO"))
+
+colors = c("black", "cyan")
+w2 =ggplot( modeldata2, aes(x = method, y = avg, color = sig, shape = pcas)) + geom_point(size = 3, position = position_dodge(width= 0.3))+
+  facet_grid(inversion~.)+
+  scale_color_manual(values = colors)+
+  #scale_y_continuous(n.breaks = 2)+
+    theme_bw(base_size = 15)+
+  xlab("Methods")+
+  ylab(bquote(R^2)) +ylim(0,1)
+ w2 
+```
+third one density graphs of relatedness
+```{r}
+#change method name for loco to be chromosome specific
+inv.fix = rel.data %>% 
+  filter(chr != "X") %>% 
+  filter(chr != "3L") %>% 
+  mutate(method = case_when(method == "locogrm" ~ paste0("locogrm", chr),
+                            T ~ method
+                            )) %>% 
+  mutate(method = case_when(method == "LDpruned" ~ "LD",
+                            method == "Fullgrm" ~ "Full",
+                            method == "locogrm2L" ~ "LOCO2L",
+                            method == "locogrm2R" ~ "LOCO2R",
+                            method == "locogrm3R" ~ "LOCO3R",
+                            method == "No_GRM" ~ "None")) %>% 
+  filter(method != "None") %>% 
+  na.omit(.) %>% 
+  as.data.table(.)
+mean = inv.fix %>% 
+  group_by(method, inversion.x) %>% 
+  summarise(mean.val = mean(value))
+
+colors = c("maroon", "orange", "green", "pink", "magenta", "skyblue")
+w3 =ggplot() + 
+  geom_density(data = inv.fix[method != "None"], aes(x = value, color = inversion.x)) +
+  # geom_density(data = inv.fix[method == "None"], aes(x = value, color = inversion.x), adjust = 0.000001) +
+  geom_vline(data=mean, aes(xintercept=mean.val, color=inversion.x),
+             linetype="dashed")+
+  facet_grid(.~method, scale = "free")+
+  scale_color_manual(values = colors)+
+  xlim(-0.075, 0.25)+
+  xlab("Relatedness")+ ylab("Density") +
+  #ggtitle("Relatedness using Loco GRM")+
+  theme_bw(base_size = 15)
+w3
+```
+
+save-looks like we want to do left center right
+
+```{r}
+library(patchwork)
+setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/Jan_2025_objects/images/")
+
+
+ggsave(
+  (
+    ((w1 + w2) / w3) + 
+      plot_layout(widths = c(2,1), heights = c(2,1), guides = "collect") & 
+      theme(legend.position = 'bottom')
+  ) + 
+  plot_annotation(tag_levels = "A"), 
+  file = "gwas.fig3.4.png", width = 10, height = 10
+)
+
+ggsave(
+  (
+    ((w1 + w2) / w3) + 
+      plot_layout(design = c(area(t = 1, l = 1, b = 1, r = 2), 
+                             area(t = 2, l = 1, b = 2, r = 2)), 
+                  widths = c(2, 1), 
+                  heights = c(2, 1), 
+                  guides = "collect") & 
+      theme(legend.position = 'bottom')
+  ) + 
+  plot_annotation(tag_levels = "A"), 
+  file = "gwas.fig3.3.pdf", width = 10, height = 10
+)
+
+combined_plot <- wrap_plots(w1, w2, w3, 
+                            design = "AAB\nAAB\nCCC",
+                            widths = c(2,1),
+                            heights = c(2,1)) + 
+  plot_annotation(tag_levels = "A") & 
+  theme(legend.position = "bottom")
+
+ggsave(combined_plot, file = "gwas.fig3.3.pdf", width = 10, height = 10)
+```
+

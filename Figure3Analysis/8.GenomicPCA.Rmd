@@ -1,0 +1,278 @@
+---
+title: "pca.grms"
+output: html_document
+date: "2024-07-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+first load in libraries and data
+
+```{r}
+library(BiocManager)
+BiocManager::install("SNPRelate")
+
+library(GWASTools)#issues with RSQLite, becuase fastmap is too old
+library(data.table)
+library(foreach)
+library(SNPRelate)
+library(SeqArray)
+
+setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/July_2024_objects/")
+
+print("opening GDS!")
+
+geno <- snpgdsOpen("D:/OtherDocs/largefiles/Old_objects/Aug_2022_objects/snp.relate.dgrp.gds", allow.fork=TRUE, readonly = TRUE)
+```
+We go through each of the SNP selection strategies, running a PCA analysis on the DGRP genome filtered according to certain strategies
+first up- full grm. no ld correct, maf > 0.05, missing < .20
+```{r}
+fulldata2 = snpgdsPCA(geno, autosome.only = F, maf = 0.05, missing.rate = 0.20,eigen.cnt = 2)
+summary(fulldata2)
+graphdt = as.data.table(fulldata2$eigenvect)
+fulldata$varprop
+fulldata2$varprop
+#make a data table with pc1, pc2, sample names, and method
+fullpca = data.frame(
+  pc1 = graphdt[[1]],
+  pc2 = graphdt[[2]],
+  lines = as.vector(fulldata2$sample.id),
+  method = "full"
+)
+#try graphing these guys to see if we can match up with huang 2024
+# library(tidyverse)
+# colnames(graphdt) = c("pc1", "pc2")
+# ggplot(graphdt, aes(x = pc1, y = pc2)) +
+#   geom_point()
+```
+now we'll repeat with LD GRM
+
+```{r}
+#this time we'll use snpfilter
+
+snpset <- snpgdsLDpruning(geno,
+                          ld.threshold=.2,
+                          sample.id = NULL,
+                          slide.max.bp = 2000,#get to 1/10 of SNPS(2,000), redo loco
+                          autosome.only=FALSE,
+                          missing.rate=.15,
+                          maf=.05)
+
+# Make allChr matrix
+
+chr.to.use <- c("chr2L","chr2R","chr3L","chr3R","chrX")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+
+lddata2 = snpgdsPCA(geno,snp.id = snpset.use, autosome.only = F, maf = 0.05, missing.rate = 0.15,eigen.cnt = 2)
+summary(lddata2)
+graphdt = as.data.table(lddata2$eigenvect)
+
+#make a data table with pc1, pc2, sample names, and method
+ldpca = data.frame(
+  pc1 = graphdt[[1]],
+  pc2 = graphdt[[2]],
+  lines = as.vector(fulldata2$sample.id),
+  method = "ld"
+)
+```
+
+now we'll do Loco- we'll need to do four of them for each chromosome with cosmopolitan inverisons
+
+```{r}
+#snpset is the same as above
+#make a vector of chromosomes to drop
+chromosomes = c("chr2L","chr2R","chr3L","chr3R")
+out = foreach (f = chromosomes ) %do% {
+#f = "chr2L"
+chr.to.use <- c("chr2L","chr2R","chr3L","chr3R","chrX")
+#remove f
+chr.to.use = chr.to.use[!(chr.to.use %in% f)]
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+
+locodata2 = snpgdsPCA(geno,snp.id = snpset.use, autosome.only = F, maf = 0.05, missing.rate = 0.15,eigen.cnt = 2)
+summary(locodata2)
+graphdt = as.data.table(locodata2$eigenvect)
+
+#make a data table with pc1, pc2, sample names, and method
+locopca = data.frame(
+  pc1 = graphdt[[1]],
+  pc2 = graphdt[[2]],
+  lines = as.vector(locodata2$sample.id),
+  method = "loco"
+  
+)
+locopca$chr = f
+locopca
+}
+locopca = rbindlist(out)
+```
+
+next we want to bind together our different pca results, and bind in the inversion statuses
+```{r}
+bind1 = rbind(ldpca, fullpca)
+bind1$chr = NA
+bind2 = rbind(bind1, locopca)
+saveRDS(bind2, "/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/July_2024_objects/pcabind")
+#load in inversion info
+library(readxl)
+setwd( "/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/July_2024_objects/")
+bind2 = readRDS("pcabind")
+summary(bind2[method == "50percent"]$pc1)
+
+library(readxl)
+inv.dt = read_xlsx("inversion.xlsx")
+inv.dt = inv.dt[,c(1:2)]
+colnames(inv.dt) = c("lines", "inv.st")
+inv.dt$lines = gsub("DGRP", "line", inv.dt$lines)
+inv.dt = as.data.table(inv.dt)
+mergedata = merge(bind2, inv.dt, by = "lines")
+```
+
+
+ we want to make a dataset with a different set for each chromosome, that is matched to the corresponding major inversions. will likely need to split the dataset, then go through each inversion of interest.
+```{r}
+locodata = bind2[method == "loco"]
+nonloco = bind2[method != "loco"]
+#load in our broader set of inversions for reference
+inv.ref = readRDS("inv.dt")
+inversions = c("In(2L)t","In(2R)NS","In(3L)P","In(3R)P","In(3R)K","In(3R)Mo")
+inv.dt = read_xlsx("inversion.xlsx")
+#create a loop that appends inversion data to each data set, then rbinds them
+inv.out = foreach(i = inversions) %do% {
+ #i = inversions[1]
+  #identify relevant chromosome
+  chrom = as.data.frame(i) %>% 
+    mutate( chrom = case_when(grepl("2L", i)==T ~ "2L",
+              grepl("2R", i)==T ~ "2R",
+              grepl("3L", i)==T ~ "3L",
+              grepl("3R", i)==T ~ "3R"
+    ))
+  #filter down to inversion of interest
+  inv.filter = inv.dt %>% 
+    select(c(`DGRP Line`,all_of(i)))
+  
+colnames(inv.filter) = c("lines", "inv.st")
+inv.filter$lines = gsub("DGRP", "line", inv.filter$lines)
+inv.filter = as.data.table(inv.filter)
+mergedata = merge(nonloco, inv.filter, by = "lines")
+#now assign the chromosome
+mergedata$chr = chrom[1,2]
+#now assign inversion status to loco dataset
+loco.filter = locodata %>% 
+  mutate(chr = gsub("chr", "", chr)) %>% 
+  filter(chr == chrom[1,2]) %>% 
+  merge(., inv.filter, by = "lines")
+#bind
+talldata = rbind(mergedata, loco.filter)
+talldata$inversion = i
+talldata
+}
+inv.bind.out = rbindlist(inv.out)
+
+```
+excellent, now we have the loadings compared to each of the cosmopolitan inversions. 
+lets redo those graphs
+
+```{r}
+#the percent of genome are nearly identical to full, removing them for graph clarity
+saveRDS(inv.bind, "pcadata")
+inv.bind.out = readRDS("pcadata")
+inv.bind = inv.bind.out %>% 
+  filter(method %in% c("full", "ld", "loco")) %>% 
+  mutate(inversion = gsub("In", "", inversion))
+ggplot(inv.bind, aes(pc1, pc2, color = inv.st)) +
+  geom_point() +
+  facet_grid(inversion~method)
+  
+dev.off()
+```
+
+now we'll do some simple linear modeling, of inversion status as a fixed effect on pc1 and pc2. we want to make a script that systematically checks the effect of each inversion against each method. we'll make a ref file, then use a loop to iterate through them
+```{r}
+library(lme4)
+#make ref file
+ref.file = expand.grid(unique(inv.bind.out$method), unique(inv.bind.out$inversion))
+#to run permutations, make a column 0-100 that is added on.
+perm.num = c(0:100)
+ref.file = expand_grid(ref.file, perm.num)
+#create a foreach loop that iterates through the variables creating linear models with inversion satus as a fixed effect on the pcs
+stat.out = foreach(s = 1:dim(ref.file)[1])%do% {
+   #s = 1
+  #perm.num = 0
+  #filter data frame
+  perm.num = as.numeric(unlist(ref.file[s,3])[1])
+  iof = as.character(unlist(ref.file[s,2])[1])
+  mof = as.character(unlist(ref.file[s,1])[1])
+  dt = inv.bind.out %>% 
+    filter(method == mof) %>% 
+    filter(inversion == iof) %>% 
+    filter(inv.st != "INV/ST") %>% #remove heterozgoes %>% 
+    mutate(inv.st = as.factor(inv.st))
+  
+  #if perm.num is > 0, shuffle inversion status.
+  if(perm.num > 0) {
+     set.seed(perm.num)
+  dt$inv.st = dt$inv.st[sample(nrow(dt))]
+  print("shuffle")
+
+  }
+  #for pc1
+  model1 = lm(pc1 ~ inv.st, data = dt)
+  model1null = lm(pc1 ~ 1, data = dt)
+  anova = anova(model1, model1null)
+  #for pc2
+  model2 = lm(pc2 ~ inv.st, data = dt)
+  model2null = lm(pc2 ~ 1, data = dt)
+  anova2 = anova(model2, model2null)
+ 
+  df = data.frame(
+    inversion = iof,
+    method = mof,
+    P.value1 = unlist(anova[2,6]),
+    F.stat1 = unlist(anova[2,5]),
+    rsquared1 = summary(model1)$r.squared,
+    adj.rsquared1 = summary(model1)$adj.r.squared,
+    P.value2 = unlist(anova2[2,6]),
+    F.stat2 = unlist(anova2[2,5]),
+    rsquared2 = summary(model2)$r.squared,
+    adj.rsquared2 = summary(model2)$adj.r.squared,
+    perm.num = perm.num
+  )
+  df
+}
+model.data = rbindlist(stat.out)
+#create 95 confidence intervals using the perms, find significance that way. 
+
+#saveRDS(model.data,"fullmodeldata")
+
+dis.data = model.data%>% 
+  mutate(perm.st = case_when(perm.num == 0 ~ "observed",
+                             T ~ "permuted")) %>%
+  pivot_longer(cols = c(rsquared1, rsquared2), names_to = "pcas",values_to = "rsquared") %>% 
+  group_by( inversion, method, perm.st, pcas) %>%      
+  summarise(avg = mean(rsquared, na.rm = T),
+            lowerbound = quantile(rsquared, 0.025),
+            upperbound = quantile(rsquared, 0.975)) %>% 
+  as.data.table(.)
+obs.dt = dis.data[perm.st == "observed"]
+perm.dt = dis.data[perm.st == "permuted"]
+
+#try merging in perm data based on pheno
+mergedata = perm.dt %>% 
+  select( inversion, method, pcas, upperbound) %>% 
+  merge(obs.dt, ., by = c("inversion", "method","pcas"))%>% 
+  mutate(sig = case_when(avg > upperbound.y ~ "Sig",
+                         
+                         T ~ "Non-Sig")) %>% 
+  # filter(avg.x <= 0.25) %>% 
+  as.data.table()
+
+
+saveRDS(mergedata, "pcamodeldata2")
+```
+

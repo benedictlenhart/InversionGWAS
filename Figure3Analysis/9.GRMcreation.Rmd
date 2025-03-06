@@ -1,0 +1,147 @@
+---
+title: "GRM creation"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+
+library(BiocManager)
+BiocManager::install("SNPRelate")
+
+library(GWASTools)#issues with RSQLite, becuase fastmap is too old
+library(data.table)
+library(SNPRelate)
+library(SeqArray)
+
+setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/Aug_2022_objects/")
+
+#if file is in seq gds format, convert to snp gds format
+gds_filename <- "dgrp.gds"
+
+#we need to convert our seq gds file to snp gds file type
+seqGDS2SNP(gds_filename, "snp.relate.dgrp.gds", compress.geno="ZIP_RA", compress.annotation="ZIP_RA", optimize=TRUE, verbose=TRUE)
+
+
+
+
+###############
+##GRM Creation#
+###############
+print("opening GDS!")
+geno <- snpgdsOpen("snp.relate.dgrp.gds", allow.fork=TRUE, readonly = TRUE)
+
+#read genotypes and filters
+print("filtering snps")
+
+genotyped_samples <- read.gdsn(index.gdsn(geno, "sample.id"))
+
+rna_samples <- genotyped_samples
+
+snpset <- snpgdsLDpruning(geno,
+                          ld.threshold=.2,
+                          sample.id = NULL,
+                          slide.max.bp = 2000,#get to 1/10 of SNPS(2,000), redo loco
+                          autosome.only=FALSE,
+                          missing.rate=.15,
+                          maf=.05)
+
+
+
+
+
+# Make LD GRM
+
+chr.to.use <- c("chr2L","chr2R","chr3L","chr3R","chrX")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+grm_raw <- snpgdsGRM(geno, method="Eigenstrat", snp.id=snpset.use, sample.id=rna_samples, autosome.only=FALSE, num.thread=1)
+grm <- grm_raw$grm
+grm[1:5,1:5]
+rownames(grm) <- grm_raw$sample.id
+colnames(grm) <- grm_raw$sample.id
+#flip matrix to match phenotype data
+
+saveRDS(grm, "LDGRM")
+
+#Make LOCO GRMS
+#No 2L
+chr.to.use <- c("chr2R","chr3L","chr3R","chrX")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+grm_raw <- snpgdsGRM(geno, method="Eigenstrat", snp.id=snpset.use, sample.id=rna_samples, autosome.only=FALSE, num.thread=1)
+grm <- grm_raw$grm
+grm[1:5,1:5]
+rownames(grm) <- grm_raw$sample.id
+colnames(grm) <- grm_raw$sample.id
+#flip matrix to match phenotype data
+
+saveRDS(grm, "No2LGRM")
+
+#No 2R
+chr.to.use <- c("chr2L","chr3L","chr3R","chrX")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+grm_raw <- snpgdsGRM(geno, method="Eigenstrat", snp.id=snpset.use, sample.id=rna_samples, autosome.only=FALSE, num.thread=1)
+grm <- grm_raw$grm
+grm[1:5,1:5]
+rownames(grm) <- grm_raw$sample.id
+colnames(grm) <- grm_raw$sample.id
+#flip matrix to match phenotype data
+
+saveRDS(grm, "No2RGRM")
+
+#No 3L
+chr.to.use <- c("chr2R","chr2L","chr3R","chrX")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+grm_raw <- snpgdsGRM(geno, method="Eigenstrat", snp.id=snpset.use, sample.id=rna_samples, autosome.only=FALSE, num.thread=1)
+grm <- grm_raw$grm
+grm[1:5,1:5]
+rownames(grm) <- grm_raw$sample.id
+colnames(grm) <- grm_raw$sample.id
+#flip matrix to match phenotype data
+
+saveRDS(grm, "No3LGRM")
+
+#No 3R
+chr.to.use <- c("chr2R","chr3L","chr2L","chrX")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+grm_raw <- snpgdsGRM(geno, method="Eigenstrat", snp.id=snpset.use, sample.id=rna_samples, autosome.only=FALSE, num.thread=1)
+grm <- grm_raw$grm
+grm[1:5,1:5]
+rownames(grm) <- grm_raw$sample.id
+colnames(grm) <- grm_raw$sample.id
+#flip matrix to match phenotype data
+
+saveRDS(grm, "No3RGRM")
+
+#No X
+chr.to.use <- c("chr2R","chr3L","chr3R","chr2L")
+print(paste0("using chromosomes: ", paste0(chr.to.use, collapse=", ")))
+snpset.use <- unlist(snpset[chr.to.use])
+print(paste0("nSNPs: ", length(snpset.use)))
+grm_raw <- snpgdsGRM(geno, method="Eigenstrat", snp.id=snpset.use, sample.id=rna_samples, autosome.only=FALSE, num.thread=1)
+grm <- grm_raw$grm
+grm[1:5,1:5]
+rownames(grm) <- grm_raw$sample.id
+colnames(grm) <- grm_raw$sample.id
+#flip matrix to match phenotype data
+
+saveRDS(grm, "NoXGRM")
+
+snpgdsClose(geno)
+
+```
+
