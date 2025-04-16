@@ -1,0 +1,936 @@
+phenotype_id	phenotype_name	study_id	study_name	study_status	dataset_type	raw_dataset_id	nber_dgrp_lines	nber_sex_female	nber_sex_male	nber_sex_na	is_numeric	is_continuous	summary_type	unit	description
+20	mn_Surv_Azinpho_0_25	3	Battlay et al., 2016	integrated	summary		178	0	0	178	true	true	mean	NA	Mean azinphos-methyl survival to pupation at single 0.25 µg/ml dose
+21	mn_Surv_Azinpho_0_5	3	Battlay et al., 2016	integrated	summary		178	0	0	178	true	true	mean	NA	Mean azinphos-methyl survival to pupation at single 0.5 µg/ml dose
+22	mn_Surv_Azinpho_1_0	3	Battlay et al., 2016	integrated	summary		178	0	0	178	true	true	mean	NA	Mean azinphos-methyl survival to pupation at single 1 µg/ml dose
+23	mn_Surv_Azinpho_2_0	3	Battlay et al., 2016	integrated	summary		178	0	0	178	true	true	mean	NA	Mean azinphos-methyl survival to pupation at single 2 µg/ml dose
+24	LD50_Azinphos_Methyl	3	Battlay et al., 2016	integrated	summary		178	0	0	178	true	true	NA	NA	50% lethal dose (LD<sub>50</sub>) to azinphos-methyl
+113	pc_Progeny_P1	8	Chow et al., 2013	integrated	summary		38	0	0	38	true	true	mean	Proportion / Ratio	 P1 as the proportion of progeny from the first male after the second mating (progeny was sorted by eye color)
+114	Progeny_Total	8	Chow et al., 2013	integrated	summary		38	0	0	38	true	true	mean	NA	 Total Progeny as the number of progeny from each doubly mated female (irrespective of male parent, progeny was sorted by eye color)
+115	pc_Remating_Female	8	Chow et al., 2013	integrated	summary		39	0	0	39	true	true	NA	Proportion / Ratio	Remating rate as the proportion of the 30 females that mate with a second male (progeny was sorted by eye color)
+1234	Microbiota_OTU001	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=<i>Lactobacillusbrevis</i>] (OTU_ID: 001)
+1235	Microbiota_OTU002	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 002)
+1236	Microbiota_OTU003	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 003)
+1237	Microbiota_OTU004	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=NA][species=NA] (OTU_ID: 004)
+1238	Microbiota_OTU005	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconacetobacter</i>][species=NA] (OTU_ID: 005)
+1239	Microbiota_OTU006	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Betaproteobacteria</i>][order=<i>Burkholderiales</i>][family=<i>Comamonadaceae</i>][genus=<i>Comamonas</i>][species=NA] (OTU_ID: 006)
+1240	Microbiota_OTU007	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=NA] (OTU_ID: 007)
+1241	Microbiota_OTU008	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Bacillales</i>][family=<i>Paenibacillaceae</i>][genus=<i>Brevibacillus</i>][species=<i>Brevibacillusthermoruber</i>] (OTU_ID: 008)
+1242	Microbiota_OTU009	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconobacter</i>][species=NA] (OTU_ID: 009)
+1243	Microbiota_OTU010	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Betaproteobacteria</i>][order=<i>Burkholderiales</i>][family=<i>Alcaligenaceae</i>][genus=<i>Achromobacter</i>][species=NA] (OTU_ID: 010)
+1244	Microbiota_OTU011	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=<i>Lactobacilluspentosus</i>] (OTU_ID: 011)
+1245	Microbiota_OTU012	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 012)
+1246	Microbiota_OTU013	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Brucellaceae</i>][genus=<i>Ochrobactrum</i>][species=NA] (OTU_ID: 013)
+1247	Microbiota_OTU014	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Betaproteobacteria</i>][order=<i>Burkholderiales</i>][family=<i>Comamonadaceae</i>][genus=<i>Delftia</i>][species=NA] (OTU_ID: 014)
+1248	Microbiota_OTU015	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Bacillales</i>][family=<i>Paenibacillaceae</i>][genus=<i>Paenibacillus</i>][species=<i>Paenibacilluschondroitinus</i>] (OTU_ID: 015)
+1249	Microbiota_OTU016	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Brucellaceae</i>][genus=<i>Ochrobactrum</i>][species=NA] (OTU_ID: 016)
+1250	Microbiota_OTU017	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 017)
+1251	Microbiota_OTU018	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Pseudomonadales</i>][family=<i>Moraxellaceae</i>][genus=<i>Acinetobacter</i>][species=NA] (OTU_ID: 018)
+1252	Microbiota_OTU019	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Pseudomonadales</i>][family=<i>Moraxellaceae</i>][genus=<i>Acinetobacter</i>][species=<i>Acinetobacterrhizosphaerae</i>] (OTU_ID: 019)
+1253	Microbiota_OTU020	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=<i>Rhodanobacter</i>][species=<i>Rhodanobacterlindaniclasticus</i>] (OTU_ID: 020)
+1254	Microbiota_OTU021	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Enterobacteriales</i>][family=<i>Enterobacteriaceae</i>][genus=<i>Enterobacter</i>][species=<i>Enterobacterhormaechei</i>] (OTU_ID: 021)
+1255	Microbiota_OTU022	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Actinobacteria</i>][order=<i>Actinomycetales</i>][family=<i>Microbacteriaceae</i>][genus=<i>Microbacterium</i>][species=NA] (OTU_ID: 022)
+1256	Microbiota_OTU023	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Sphingobacteria</i>][order=<i>Sphingobacteriales</i>][family=<i>Sphingobacteriaceae</i>][genus=<i>Sphingobacterium</i>][species=NA] (OTU_ID: 023)
+1257	Microbiota_OTU024	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Sphingomonadales</i>][family=<i>Sphingomonadaceae</i>][genus=<i>Novosphingobium</i>][species=NA] (OTU_ID: 024)
+1258	Microbiota_OTU025	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Brucellaceae</i>][genus=<i>Ochrobactrum</i>][species=NA] (OTU_ID: 025)
+1259	Microbiota_OTU026	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Pseudomonadales</i>][family=<i>Moraxellaceae</i>][genus=<i>Acinetobacter</i>][species=<i>Acinetobacterjohnsonii</i>] (OTU_ID: 026)
+1260	Microbiota_OTU027	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 027)
+1261	Microbiota_OTU028	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=NA][species=NA] (OTU_ID: 028)
+1262	Microbiota_OTU029	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Pseudomonadales</i>][family=<i>Pseudomonadaceae</i>][genus=<i>Pseudomonas</i>][species=NA] (OTU_ID: 029)
+1263	Microbiota_OTU030	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Caulobacterales</i>][family=<i>Caulobacteraceae</i>][genus=<i>Mycoplana</i>][species=NA] (OTU_ID: 030)
+1264	Microbiota_OTU031	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Rhizobiaceae</i>][genus=<i>Agrobacterium</i>][species=NA] (OTU_ID: 031)
+1265	Microbiota_OTU032	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Actinobacteria</i>][order=<i>Actinomycetales</i>][family=<i>Nocardiaceae</i>][genus=<i>Rhodococcus</i>][species=NA] (OTU_ID: 032)
+1266	Microbiota_OTU033	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Actinobacteria</i>][order=<i>Actinomycetales</i>][family=<i>Microbacteriaceae</i>][genus=<i>Leucobacter</i>][species=NA] (OTU_ID: 033)
+1267	Microbiota_OTU034	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Bacillales</i>][family=<i>Bacillaceae</i>][genus=<i>Bacillus</i>][species=NA] (OTU_ID: 034)
+1268	Microbiota_OTU035	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=NA][species=NA] (OTU_ID: 035)
+1269	Microbiota_OTU037	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Methylobacteriaceae</i>][genus=<i>Methylobacterium</i>][species=<i>Methylobacteriumadhaesivum</i>] (OTU_ID: 037) 
+1270	Microbiota_OTU040	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Sphingomonadales</i>][family=<i>Sphingomonadaceae</i>][genus=<i>Sphingomonas</i>][species=NA] (OTU_ID: 040) 
+1271	Microbiota_OTU041	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Phyllobacteriaceae</i>][genus=<i>Mesorhizobium</i>][species=NA] (OTU_ID: 041)
+1272	Microbiota_OTU042	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=NA][species=NA] (OTU_ID: 042)
+1273	Microbiota_OTU044	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 044)
+1274	Microbiota_OTU045	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=<i>Lactobacillusbrevis</i>] (OTU_ID: 045)
+1275	Microbiota_OTU046	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Methylobacteriaceae</i>][genus=<i>Methylobacterium</i>][species=<i>Methylobacteriumradiotolerans</i>] (OTU_ID: 046)
+1276	Microbiota_OTU047	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Sphingobacteria</i>][order=<i>Sphingobacteriales</i>][family=NA][genus=NA][species=NA] (OTU_ID: 047)
+1277	Microbiota_OTU048	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=NA][order=NA][family=NA][genus=NA][species=NA] (OTU_ID: 048)
+1278	Microbiota_OTU050	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Sphingobacteria</i>][order=<i>Sphingobacteriales</i>][family=<i>Sphingobacteriaceae</i>][genus=<i>Sphingobacterium</i>][species=NA] (OTU_ID: 050)
+1279	Microbiota_OTU051	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Bacillales</i>][family=NA][genus=NA][species=NA] (OTU_ID: 051)
+1280	Microbiota_OTU052	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acidocella</i>][species=NA] (OTU_ID: 052)
+1281	Microbiota_OTU053	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Betaproteobacteria</i>][order=<i>Burkholderiales</i>][family=<i>Comamonadaceae</i>][genus=<i>Comamonas</i>][species=NA] (OTU_ID: 053)
+1282	Microbiota_OTU056	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhizobiales</i>][family=<i>Methylobacteriaceae</i>][genus=<i>Methylobacterium</i>][species=NA] (OTU_ID: 056)
+1283	Microbiota_OTU058	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconacetobacter</i>][species=NA] (OTU_ID: 058)
+1284	Microbiota_OTU060	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 060)
+1285	Microbiota_OTU063	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconobacter</i>][species=NA] (OTU_ID: 063)
+1286	Microbiota_OTU068	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 068)
+1287	Microbiota_OTU069	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>4C0d-2</i>][order=<i>mle1-12</i>][family=NA][genus=NA][species=NA] (OTU_ID: 069)
+1288	Microbiota_OTU073	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Sphingobacteria</i>][order=<i>Sphingobacteriales</i>][family=<i>Sphingobacteriaceae</i>][genus=<i>Pedobacter</i>][species=NA] (OTU_ID: 073)
+1289	Microbiota_OTU074	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 074)
+1290	Microbiota_OTU077	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Betaproteobacteria</i>][order=<i>Burkholderiales</i>][family=<i>Alcaligenaceae</i>][genus=<i>Achromobacter</i>][species=NA] (OTU_ID: 077)
+1291	Microbiota_OTU081	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 081)
+1292	Microbiota_OTU082	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=NA][species=NA] (OTU_ID: 082)
+1293	Microbiota_OTU087	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Deltaproteobacteria</i>][order=<i>MIZ46</i>][family=NA][genus=NA][species=NA] (OTU_ID: 087)
+1294	Microbiota_OTU090	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=<i>Lactobacillusbrevis</i>] (OTU_ID: 090)
+1295	Microbiota_OTU091	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=NA][species=NA](OTU_ID: 091)
+1296	Microbiota_OTU110	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Betaproteobacteria</i>][order=<i>Burkholderiales</i>][family=<i>Comamonadaceae</i>][genus=<i>Comamonas</i>][species=NA] (OTU_ID: 110)
+1297	Microbiota_OTU115	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconacetobacter</i>][species=NA] (OTU_ID: 115)
+1298	Microbiota_OTU121	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 121)
+1299	Microbiota_OTU124	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=<i>Lactobacillusbrevis</i>] (OTU_ID: 124)
+1300	Microbiota_OTU127	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 127)
+1301	Microbiota_OTU134	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Actinobacteria</i>][order=<i>Solirubrobacterales</i>][family=<i>Patulibacteraceae</i>][genus=NA][species=NA] (OTU_ID: 134)
+1302	Microbiota_OTU137	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconacetobacter</i>][species=NA] (OTU_ID: 137)
+1303	Microbiota_OTU154	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Gluconacetobacter</i>][species=NA] (OTU_ID: 154)
+1304	Microbiota_OTU160	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Gammaproteobacteria</i>][order=<i>Xanthomonadales</i>][family=<i>Xanthomonadaceae</i>][genus=NA][species=NA] (OTU_ID: 160)
+1305	Microbiota_OTU166	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Bacilli</i>][order=<i>Lactobacillales</i>][family=<i>Lactobacillaceae</i>][genus=<i>Lactobacillus</i>][species=<i>Lactobacillusbrevis</i>] (OTU_ID: 166)
+1306	Microbiota_OTU170	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 170)
+1307	Microbiota_OTU171	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 171)
+1308	Microbiota_OTU172	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 172)
+1309	Microbiota_OTU173	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	NA	OTU taxon abundance in microbiota composition [class=<i>Alphaproteobacteria</i>][order=<i>Rhodospirillales</i>][family=<i>Acetobacteraceae</i>][genus=<i>Acetobacter</i>][species=NA] (OTU_ID: 173)
+1311	mn_RespBenzaldeh_3_5	1	Arya et al., 2010	integrated	summary		139	139	139	0	true	true	mean	NA	Mean Response Score to Benzaldehyde 3.5% odorant
+1312	mn_RespAcetophen_3_5	1	Arya et al., 2010	integrated	summary		219	219	219	0	true	true	mean	NA	Mean Response Score to Acetophenone 3.5% odorant
+1313	mn_RespHexanol_3_5	1	Arya et al., 2010	integrated	summary		219	219	219	0	true	true	mean	NA	Mean Response Score to Hexanol 3.5% odorant
+1314	mn_RespHexanol_0_3	1	Arya et al., 2010	integrated	summary		219	219	219	0	true	true	mean	NA	Mean Response Score to Hexanol 0.3% odorant
+1315	mn_Longevity	1	Arya et al., 2010	integrated	summary		218	218	218	0	true	true	mean	Days	Longevity / Lifespan
+1316	mn_Resp_Hexanal	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to hexanal odorant (Aldehyde)
+1317	mn_Resp_Citral	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to citral odorant (Aldehyde, adjusted for block effect)
+1318	mn_Resp_2_Heptanone	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to 2-Heptanone alcohol odorant (Ketone, adjusted for block effect)
+1319	mn_Resp_2_PhenylEthy	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to 2-Phenyl ethyl alcohol odorant (Aromatics)
+1320	mn_Resp_MethylSalicy	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to methyl salicylate odorant (Aromatics, adjusted for block effect)
+1321	mn_Resp_Benzaldehyde	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to benzaldehyde odorant (Aromatics)
+1322	mn_Resp_1_Acetophen	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to acetophenone odorant (Aromatics)
+1323	mn_Resp_Eugenol	2	Arya et al., 2015	integrated	summary		185	185	185	0	true	true	mean	NA	Mean response score to eugenol odorant (Aromatics, adjusted for block effect)
+1324	mn_Resp_Helional	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to helional odorant (Aromatics)
+1325	mn_Resp_I_Carvone	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to I-Carvone odorant (Carvones)
+1326	mn_Resp_d_Carvone	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to d-Carvone odorant (Carvones)
+1327	mn_Resp_1_Hexanol	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to 1-Hexanol odorant (Alcohol)
+1328	mn_Resp_EthylAcetate	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to ethyl acetate odorant (Esters)
+1329	mn_Resp_EthylButyrat	2	Arya et al., 2015	integrated	summary		186	186	186	0	true	true	mean	NA	Mean response score to ethyl butyrate odorant (Esters, adjusted for block effect)
+1330	PE_FracDead_3d	4	Bou Sleiman et al., 2015	integrated	summary		140	140	0	0	true	true	mean	Proportion / Ratio	Percentage death after 3 days post-infection with <i>Pseudomonas entomophila</i>
+1331	Resp_Butanedion_30pc	5	Brown et al., 2013	integrated	summary		157	157	157	0	true	true	mean	s	Time at which 30% of cumulative response strength to 2,3-butanedione was achieved (odor-guided behavior)
+1332	Resp_Butanedion_90pc	5	Brown et al., 2013	integrated	summary		157	157	157	0	true	true	mean	s	Time at which 90% of cumulative response strength to 2,3-butanedione was achieved (odor-guided behavior)
+1333	FarPoint_Butanedione	5	Brown et al., 2013	integrated	summary		157	157	157	0	true	true	mean	cm	Intensity of response as the farthest point achieved by the median fly position in the direction of the odorant source of 2,3-butanedione (in cm, odor-guided behavior)
+1334	LocRatio_Butanedione	5	Brown et al., 2013	integrated	summary		157	157	157	0	true	true	mean	Proportion / Ratio	Location ratio of the total fly density in the non-odor-half / odor-half trough towards the source of 2,3-butanedione (odor-guided behavior)
+1335	TotArea_Butanedione	5	Brown et al., 2013	integrated	summary		157	157	157	0	true	true	mean	cm/s	'Strength' phenotype as the total area (cm / second) between the median fly position and control (over time) towards the source of 2,3-butanedione (odor-guided behavior)
+1336	mn_PhototaxisScor_1w	6	Carbone et al., 2016	integrated	summary		191	191	191	0	true	true	mean	NA	Mean of the phototaxis (moving towards a light source) response score (1 week old = young flies)
+1337	se_PhototaxisScor_1w	6	Carbone et al., 2016	integrated	summary		191	191	191	0	true	true	standard error	NA	Standard error of the phototaxis (moving towards a light source) response score (1 week old = young flies)
+1338	mn_PhototaxisScor_2w	6	Carbone et al., 2016	integrated	summary		191	191	191	0	true	true	mean	NA	Mean of the phototaxis (moving towards a light source) response score (2 weeks old = middle-aged flies)
+1339	se_PhototaxisScor_2w	6	Carbone et al., 2016	integrated	summary		191	191	191	0	true	true	standard error	NA	Standard error of the phototaxis (moving towards a light source) response score (2 weeks old = middle-aged flies)
+1340	mn_PhototaxisScor_4w	6	Carbone et al., 2016	integrated	summary		185	185	185	0	true	true	mean	NA	Mean of the phototaxis (moving towards a light source) response score (4 weeks old = senior flies)
+1341	se_PhototaxisScor_4w	6	Carbone et al., 2016	integrated	summary		185	185	185	0	true	true	standard error	NA	Standard error of the phototaxis (moving towards a light source) response score (4 weeks old = senior flies)
+1342	hr_ERStress_Survival	9	Chow et al., 2013	integrated	summary		112	0	112	0	true	true	hazard ratio	NA	Hazard Ratio of survival under Endoplasmic Reticulum (ER) stress
+1343	ERStress_t50	9	Chow et al., 2013	integrated	summary		112	0	112	0	true	true	NA	Hours	Time in hours at which 50% of flies have died (t<sub>50</sub>) under Endoplasmic Reticulum (ER) stress
+1349	Cuticul_n_C21	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C21 cuticular component on epicuticle from total CHCs
+1350	Cuticul_n_C22	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C22 cuticular component on epicuticle from total CHCs
+1351	Cuticul_7_11_C23_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 7;11-C23:2 cuticular component on epicuticle from total CHCs
+1352	Cuticul_2_Me_C22	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C22 cuticular component on epicuticle from total CHCs
+1353	Cuticul_9_C23_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 9-C23:1 cuticular component on epicuticle from total CHCs
+1354	Cuticul_7_C23_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 7-C23:1 cuticular component on epicuticle from total CHCs
+1355	Cuticul_6_C23_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 6-C23:1 cuticular component on epicuticle from total CHCs
+1356	Cuticul_5_C23_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 5-C23:1 cuticular component on epicuticle from total CHCs
+1357	Cuticul_x_C23_1	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of <i>x</i>-C23:1 cuticular component on epicuticle from total CHCs
+1358	Cuticul_n_C23	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C23 cuticular component on epicuticle from total CHCs
+1359	Cuticul_11_9_Me_C23	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 11- & 9-Me-C23 cuticular component on epicuticle from total CHCs
+1360	Cuticul_7_11_C24_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 7;11-C24:2 cuticular component on epicuticle from total CHCs
+1361	Cuticul_x_y_C24_2	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>x</i>;<i>y</i>-C24:2 cuticular component on epicuticle from total CHCs
+1362	Cuticul_3_Me_C23_C24	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 3-Me-C23 & 9-C24:1 cuticular component on epicuticle from total CHCs
+1363	Cuticul_6_C24_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 6-C24:1 cuticular component on epicuticle from total CHCs
+1364	Cuticul_NI_20	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of NI (Not Identified, Table 1, l.20) cuticular component on epicuticle from total CHCs
+1365	Cuticul_5_C24_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 5-C24:1 cuticular component on epicuticle from total CHCs
+1366	Cuticul_n_C24	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C24 cuticular component on epicuticle from total CHCs
+1367	Cuticul_9_13_C25_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 9;13-C25:2 cuticular component on epicuticle from total CHCs
+1368	Cuticul_7_11_C25_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 7;11-C25:2 cuticular component on epicuticle from total CHCs
+1369	Cuticul_2_Me_C24	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C24 cuticular component on epicuticle from total CHCs
+1370	Cuticul_6_10_C25_2	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 6;10-C25:2 cuticular component on epicuticle from total CHCs
+1371	Cuticul_5_9_C25_1_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 5;9-C25:2 & 9-C25:1 cuticular component on epicuticle from total CHCs
+1372	Cuticul_8_C25_1	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 8-C25:1 cuticular component on epicuticle from total CHCs
+1373	Cuticul_7_C25_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 7-C25:1 cuticular component on epicuticle from total CHCs
+1374	Cuticul_5_C25_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 5-C25:1 cuticular component on epicuticle from total CHCs
+1375	Cuticul_n_C25	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C25 cuticular component on epicuticle from total CHCs
+1376	Cuticul_NI_33	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of NI (Not Identified, Table 1, l.33) cuticular component on epicuticle from total CHCs
+1377	Cuticul_NI_34	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of NI (Not Identified, Table 1, l.34) cuticular component on epicuticle from total CHCs
+1378	Cuticul_13_11_Me_C25	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 13- & 11-Me-C25 cuticular component on epicuticle from total CHCs
+1379	Cuticul_5_Me_C25	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 5-Me-C25 cuticular component on epicuticle from total CHCs
+1380	Cuticul_8_12_C26_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 8;12-C26:2 cuticular component on epicuticle from total CHCs
+1381	Cuticul_7_11_C26_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 7;11-C26:2 cuticular component on epicuticle from total CHCs
+1382	Cuticul_2_Me_C25	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C25 cuticular component on epicuticle from total CHCs
+1383	Cuticul_6_10_C26_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 6;10-C26:2 cuticular component on epicuticle from total CHCs
+1384	Cuticul_3_Me_C25_C26	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 3-Me-C25 & 9-C26:1 cuticular component on epicuticle from total CHCs
+1385	Cuticul_7_C26_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 7-C26:1 cuticular component on epicuticle from total CHCs
+1386	Cuticul_n_C26	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C26 cuticular component on epicuticle from total CHCs
+1387	Cuticul_9_13_C27_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 9;13-C27:2 cuticular component on epicuticle from total CHCs
+1388	Cuticul_2_Me_C26_C27	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 7;11-C27:2 & 2-Me-C26 cuticular component on epicuticle from total CHCs
+1389	Cuticul_5_9_C27_1_2	11	Dembeck et al., 2015	integrated	summary		169	169	156	0	true	true	NA	Proportion / Ratio	Proportion of 5;9-C27:2 & 9-C27:1 cuticular component on epicuticle from total CHCs 
+1390	Cuticul_7_C27_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 7-C27:1 cuticular component on epicuticle from total CHCs
+1391	Cuticul_5_C27_1	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 5-C27:1 cuticular component on epicuticle from total CHCs
+1392	Cuticul_n_C27	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C27 cuticular component on epicuticle from total CHCs
+1393	Cuticul_8_12_C28_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 8;12-C28:2 cuticular component on epicuticle from total CHCs
+1394	Cuticul_2_Me_C27_C28	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 7;11-C28:2 & 2-Me-C27 cuticular component on epicuticle from total CHCs
+1395	Cuticul_3_Me_C27_C28	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 3-Me-C27 & 6;10-C28:2 & 9-C28:1 cuticular component on epicuticle from total CHCs
+1396	Cuticul_NI_54	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of NI (Not Identified, Table 1, l.54) cuticular component on epicuticle from total CHCs
+1397	Cuticul_n_C28	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C28 cuticular component on epicuticle from total CHCs
+1398	Cuticul_2_Me_C28_C29	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C28 & 7;11-C29:2 cuticular component on epicuticle from total CHCs
+1399	Cuticul_5_9_C29_1_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	 Proportion of 9-C29:1 & 5;9-C29:2 cuticular component on epicuticle from total CHCs
+1400	Cuticul_7_C29_1	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 7-C29:1 cuticular component on epicuticle from total CHCs
+1401	Cuticul_n_C29	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C29 cuticular component on epicuticle from total CHCs
+1402	Cuticul_2_Me_C29_C30	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C29 & 8;12-C30:2 cuticular component on epicuticle from total CHCs
+1403	Cuticul_2_Me_C30	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C30 cuticular component on epicuticle from total CHCs
+1404	Cuticul_7_11_C31_2	11	Dembeck et al., 2015	integrated	summary		169	169	0	0	true	true	NA	Proportion / Ratio	Proportion of 7,11-C31:2 cuticular component on epicuticle from total CHCs
+1405	Cuticul_n_C31	11	Dembeck et al., 2015	integrated	summary		170	169	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>n</i>-C31 cuticular component on epicuticle from total CHCs
+1406	Cuticul_x_C22_1_l2	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>x</i>-C22:1 (Table 1, l.2) cuticular component on epicuticle from total CHCs
+1407	Cuticul_x_C22_1_l3	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of <i>x</i>-C22:1 (Table 1, l.3) cuticular component on epicuticle from total CHCs
+1408	Cuticul_NI_7	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of NI (Not Identified, Table 1, l.7) cuticular component on epicuticle from total CHCs
+1409	Cuticul_3_Me_C23	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of 3-Me-C23 cuticular component on epicuticle from total CHCs
+1410	Cuticul_7_C24_1	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of 7-C24:1 cuticular component on epicuticle from total CHCs
+1411	Cuticul_9_C25_1	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of 9-C25:1 cuticular component on epicuticle from total CHCs
+1412	Cuticul_3_Me_C25	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of 3-Me-C25 cuticular component on epicuticle from total CHCs
+1413	Cuticul_6_C26_1	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of 6-C26:1 (+ impurity) cuticular component on epicuticle from total CHCs
+1414	Cuticul_2_Me_C26	11	Dembeck et al., 2015	integrated	summary		157	0	157	0	true	true	NA	Proportion / Ratio	Proportion of 2-Me-C26 cuticular component on epicuticle from total CHCs
+1416	mn_Lifespan	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	mean	Days	Mean lifespan
+1417	lsm_Lifespan	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	marginal mean	Days	Lifespan least squares means corrected for the effects of body size (thorax length) and experimental block
+1418	mn_Week1_Fecundity	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	mean	NA	Mean Fecundity (as the number of eggs) at Week 1 age (not corrected)
+1419	lsm_Week1_Fecundity	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	marginal mean	NA	Week 1 Fecundity (as the number of eggs) least squares mean corrected for the effects of body size (thorax length) and experimental block
+1420	mn_Week3_Fecundity	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	mean	NA	Mean Fecundity (as the number of eggs) at Week 3 age (not corrected)
+1421	lsm_Week3_Fecundity	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	marginal mean	NA	Week 3 Fecundity (as the number of eggs) least squares mean corrected for the effects of body size (thorax length) and experimental block
+1422	mn_Week5_Fecundity	12	Durham et al., 2014	integrated	summary		178	178	0	0	true	true	mean	NA	Mean Fecundity (as the number of eggs) at Week 5 age (not corrected)
+1423	lsm_Week5_Fecundity	12	Durham et al., 2014	integrated	summary		178	178	0	0	true	true	marginal mean	NA	Week 5 Fecundity (as the number of eggs) least squares mean corrected for the effects of body size (thorax length) and experimental block
+1424	mn_Week7_Fecundity	12	Durham et al., 2014	integrated	summary		135	135	0	0	true	true	mean	NA	Mean Fecundity (as the number of eggs) at Week 7 age (not corrected)
+1425	lsm_Week7_Fecundity	12	Durham et al., 2014	integrated	summary		135	135	0	0	true	true	marginal mean	NA	Week 7 Fecundity (as the number of eggs) least squares mean corrected for the effects of body size (thorax length) and experimental block
+1426	mn_Life_Fecundity	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	mean	NA	Mean Lifetime Fecundity (as the number of eggs, not corrected)
+1427	lsm_Life_Fecundity	12	Durham et al., 2014	integrated	summary		189	189	0	0	true	true	marginal mean	NA	Lifetime Fecundity (as the number of eggs) least squares means corrected for the effects of body size (thorax length) and experimental block
+1483	mn_SleepLength_Night	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	mean	Minutes	Mean sleep duration during the night
+1484	mn_SleepLength_Day	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	mean	Minutes	Mean sleep duration during the day
+1485	mn_BoutNumber_Night	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	mean	NA	Mean number of bouts (naps) during the night
+1486	mn_BoutNumber_Day	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	mean	NA	Mean number of bouts (naps) during the day
+1487	mn_BoutLength_Night	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	mean	Minutes	Mean bout (nap) duration during the night
+1488	mn_BoutLength_Day	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	mean	Minutes	Mean bout (nap) duration during the day (adjusted for the effect of <i>Wolbachia pipientis</i>)
+1489	mn_WakingActivity	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	NA	counts/min	Mean waking activity
+1490	cv_SleepLength_Night	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	Minutes	CV<sub>E</sub> of sleep duration during the night
+1491	cv_SleepLength_Day	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	Minutes	CV<sub>E</sub> of sleep duration during the day
+1492	cv_BoutNumber_Night	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	NA	CV<sub>E</sub> of the number of bouts (naps) during the night
+1493	cv_BoutNumber_Day	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	NA	CV<sub>E</sub> of number of bouts (naps) during the day
+1494	cv_BoutLength_Night	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	Minutes	CV<sub>E</sub> of bout (nap) duration during the night
+1495	cv_BoutLength_Day	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	Minutes	CV<sub>E</sub> of bout (nap) duration during the day
+1496	cv_WakingActivity	15	Harbison et al., 2013	integrated	summary		168	168	168	0	true	true	coefficient of variation	counts/min	CV<sub>E</sub> of waking activity
+1497	pc_Surv_PRettgeri	16	Howick et al., 2017	integrated	summary		165	165	0	0	true	true	NA	Proportion / Ratio	Proportion of alive flies after infection with <i>Providencia rettgeri</i>
+1498	pc_Surv_PRettgeriADJ	16	Howick et al., 2017	integrated	summary		156	156	0	0	true	true	NA	Proportion / Ratio	Adjusted proportion of alive flies after infection with <i>Providencia rettgeri</i>
+1499	BacterialLoad_PR	16	Howick et al., 2017	integrated	summary		168	168	0	0	true	true	NA	CFU (Colony-Forming Unit)	Bacterial load taken at 20h postinfection with <i>Providencia rettgeri</i> (log<sub>e</sub> CFU per 3 flies)
+1500	BacterialLoad_PR_ADJ	16	Howick et al., 2017	integrated	summary		158	158	0	0	true	true	NA	CFU (Colony-Forming Unit)	Adjusted bacterial load taken at 20h postinfection with <i>Providencia rettgeri</i> (log<sub>e</sub> CFU per 3 flies)
+1501	Tolerance_PRettgeri	16	Howick et al., 2017	integrated	summary		156	156	0	0	true	true	NA	NA	Adjusted tolerance to the bacterial infection with <i>Providencia rettgeri</i>
+1503	mn_GenomeSize	17	Huang et al., 2014	integrated	summary		205	205	0	0	true	true	mean	Mb	Average genome size
+1504	se_GenomeSize	17	Huang et al., 2014	integrated	summary		205	205	0	0	true	true	standard error	Mb	Standard error of genome size
+1505	TotalVariants_X	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Total number of variants on chromosome X
+1506	SegregVariants_X	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Number of segregating variants on chromosome X
+1507	pc_SegregVariants_X	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome X
+1508	TotalVariants_2L	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Total number of variants on chromosome 2L
+1509	SegregVariants_2L	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Number of segregating variants on chromosome 2L
+1510	pc_SegregVariants_2L	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 2L
+1511	TotalVariants_2R	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Total number of variants on chromosome 2R
+1512	SegregVariants_2R	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Number of segregating variants on chromosome 2R
+1513	pc_SegregVariants_2R	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 2R
+1514	TotalVariants_3L	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Total number of variants on chromosome 3L
+1515	SegregVariants_3L	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Number of segregating variants on chromosome 3L
+1516	pc_SegregVariants_3L	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 3L
+1517	TotalVariants_3R	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Total number of variants on chromosome 3R
+1518	SegregVariants_3R	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	NA	Number of segregating variants on chromosome 3R
+1519	pc_SegregVariants_3R	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 3R
+1520	Inversion_2L_t	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2L)t</i> inversion named <i>t</i> on chromosome <i>2L</i>
+1521	Inversion_2R_NS	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)NS</i> inversion named <i>Nova Scotia</i> on chromosome <i>2R</i>
+1522	Inversion_2R_Y1	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y1</i> inversion named <i>Yutaka#1</i> on chromosome <i>2R</i>
+1523	Inversion_2R_Y2	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y2</i> inversion named <i>Yutaka#2</i> on chromosome <i>2R</i>
+1524	Inversion_2R_Y3	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y3</i> inversion named <i>Yutaka#3</i> on chromosome <i>2R</i>
+1525	Inversion_2R_Y4	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y4</i> inversion named <i>Yutaka#4</i> on chromosome <i>2R</i>
+1526	Inversion_2R_Y5	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y5</i> inversion named <i>Yutaka#5</i> on chromosome <i>2R</i>
+1527	Inversion_2R_Y6	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y6</i> inversion named <i>Yutaka#6</i> on chromosome <i>2R</i>
+1528	Inversion_2R_Y7	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(2R)Y7</i> inversion named <i>Yutaka#7</i> on chromosome <i>2R</i>
+1529	Inversion_3L_P	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3L)P</i> inversion named <i>Payne</i> on chromosome <i>3L</i>
+1530	Inversion_3L_M	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3L)M</i> inversion named <i>Mourad</i> on chromosome <i>3L</i>
+1531	Inversion_3L_Y	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3L)Y</i> inversion named <i>Yutaka</i> on chromosome <i>3L</i>
+1532	Inversion_3R_P	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3R)P</i> inversion named <i>Payne</i> on chromosome <i>3R</i>
+1533	Inversion_3R_K	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3R)K</i> inversion named <i>Kodani</i> on chromosome <i>3R</i>
+1534	Inversion_3R_Mo	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3R)Mo</i> inversion named <i>Missouri</i> on chromosome <i>3R</i>
+1535	Inversion_3R_C	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Genotype of the <i>In(3R)C</i> inversion named <i>C</i> on chromosome <i>3R</i>
+1536	WolbachiaStatus	18	Ivanov et al., 2015	integrated	summary		197	197	0	0	true	false	NA	NA	Wolbachia infection status (2 = infected, 1 = not infected)
+1537	mn_Lifespan	18	Ivanov et al., 2015	integrated	summary		197	197	0	0	true	true	mean	Days	Mean virgin female lifespan
+1538	sd_Lifespan	18	Ivanov et al., 2015	integrated	summary		165	165	0	0	true	true	standard deviation	Days	Standard deviation of virgin female lifespan
+1540	md_Lifespan	18	Ivanov et al., 2015	integrated	summary		165	165	0	0	true	true	median	Days	Median of virgin female lifespan
+1541	mn_StartleResp_CTRL	19	Jordan et al., 2012	integrated	summary		192	192	192	0	true	true	mean	s	Startle response as locomotor activity (Control, no MSB exposure)
+1542	mn_StartleResp_MSB	19	Jordan et al., 2012	integrated	summary		192	192	192	0	true	true	mean	s	Startle response as locomotor activity under 3mM Menadione sodium bisulfite (MSB) exposure
+1543	mn_NegGeotaxis_CTRL	19	Jordan et al., 2012	integrated	summary		192	192	192	0	true	true	mean	NA	Negative geotaxis (NG) as locomotor capacity (Control, no MSB exposure)
+1544	mn_NegGeotaxis_MSB	19	Jordan et al., 2012	integrated	summary		192	192	192	0	true	true	mean	NA	Negative geotaxis as locomotor capacity under 3mM Menadione sodium bisulfite (MSB) exposure
+1545	mn_MortalityInd	20	Katzenberger et al., 2015	integrated	summary		179	0	0	179	true	true	mean	NA	Mean of the mortality index at 24hr (MI<sub>24</sub>) following traumatic brain injury (TBI)
+1546	sd_MortalityInd	20	Katzenberger et al., 2015	integrated	summary		179	0	0	179	true	true	standard deviation	NA	Standard deviation of the mortality index at 24hr (MI<sub>24</sub>) following traumatic brain injury (TBI)
+1547	mn_StarvationRes	21	MacKay et al., 2012	integrated	summary		166	166	166	0	true	true	mean	NA	Mean of the starvation resistance
+1548	mn_StarvationRes_ADJ	21	MacKay et al., 2012	integrated	summary		166	166	0	0	true	true	mean	NA	Mean of the starvation resistance adjusted for the effect Wolbachia infection
+1549	mn_ChillComaRec	21	MacKay et al., 2012	integrated	summary		160	160	160	0	true	true	mean	NA	Mean of the chill coma recovery
+1550	mn_StartleRes	21	MacKay et al., 2012	integrated	summary		167	167	167	0	true	true	mean	NA	Mean of the startle response 
+1567	idx_Surv_5MeHg	23	Montgomery et al., 2014	integrated	summary		173	0	0	173	true	true	NA	NA	Eclosion index (adult hatching) at 5µM methylmercury (MeHg) dose
+1568	idx_Surv_10MeHg	23	Montgomery et al., 2014	integrated	summary		173	0	0	173	true	true	NA	NA	Eclosion index (adult hatching) at 10µM methylmercury (MeHg) dose
+1569	idx_Surv_15MeHg	23	Montgomery et al., 2014	integrated	summary		173	0	0	173	true	true	NA	NA	Eclosion index (adult hatching) at 15µM methylmercury (MeHg) dose
+1570	idx_Surv_cum_MeHg	23	Montgomery et al., 2014	integrated	summary		173	0	0	173	true	true	NA	NA	Cumulative eclosion index (adult hatching) aggregating multiple methylmercury (MeHg) doses
+1579	idx_Surv_10MeHg_CAFF	23	Montgomery et al., 2014	integrated	summary		173	0	0	173	true	true	NA	NA	Eclosion index (adult hatching) at 10µM methylmercury (MeHg) dose on food supplemented with 2mM caffeine
+1581	sd_StartleRes	24	Morgante et al., 2015	integrated	summary		201	201	201	0	true	true	standard deviation	NA	Natural logarithm of the standard deviation ln(σ<sub>E</sub>) (as measure of micro-environmental plasticity) of the startle response
+1582	se_StartleRes	24	Morgante et al., 2015	integrated	summary		201	201	201	0	true	true	standard error	NA	Standard error of ln(σ<sub>E</sub>) (the natural logarithm of the standard deviation, as measure of micro-environmental plasticity) of the startle response
+1584	sd_StarvationRes	24	Morgante et al., 2015	integrated	summary		197	197	197	0	true	true	standard deviation	NA	Natural logarithm of the standard deviation ln(σ<sub>E</sub>) (as measure of micro-environmental plasticity) of the starvation resistance
+1585	se_StarvationRes	24	Morgante et al., 2015	integrated	summary		197	197	197	0	true	true	standard error	NA	Standard error of ln(σ<sub>E</sub>) (the natural logarithm of the standard deviation, as measure of micro-environmental plasticity) of the starvation resistance
+1587	sd_ChillComaRec	24	Morgante et al., 2015	integrated	summary		174	174	174	0	true	true	standard deviation	NA	Natural logarithm of the standard deviation ln(σ<sub>E</sub>) (as measure of micro-environmental plasticity) of the chill coma recovery
+1588	se_ChillComaRec	24	Morgante et al., 2015	integrated	summary		174	174	174	0	true	true	standard error	NA	Standard error of ln(σ<sub>E</sub>) (the natural logarithm of the standard deviation, as measure of micro-environmental plasticity) of the chill coma recovery
+1589	mn_AlcoholSens_E1	25	Morozova et al., 2015	integrated	summary		205	205	205	0	true	true	mean	Minutes	Mean elution time (MET), as a measure of alcohol sensitivity, following a single ethanol exposure (E1)
+1590	se_AlcoholSens_E1	25	Morozova et al., 2015	integrated	summary		205	205	205	0	true	true	standard error	Minutes	Standard error of the mean elution time (MET), a measure of alcohol sensitivity, following a single ethanol exposure (E1)
+1591	mn_AlcoholSens_E2	25	Morozova et al., 2015	integrated	summary		205	205	205	0	true	true	mean	Minutes	Mean elution time (MET), as a measure of alcohol sensitivity, following repeated ethanol exposure (E2)
+1592	se_AlcoholSens_E2	25	Morozova et al., 2015	integrated	summary		205	205	205	0	true	true	standard error	Minutes	Standard error of the mean elution time (MET), a measure of alcohol sensitivity, following repeated ethanol exposure (E2)
+1593	mn_AlcoholTolerance	25	Morozova et al., 2015	integrated	summary		205	205	205	0	true	true	mean	Minutes	Mean of alcohol tolerance (T) as the difference of MET between the second and first exposure
+1594	se_AlcoholTolerance	25	Morozova et al., 2015	integrated	summary		205	205	205	0	true	true	standard error	Minutes	Standard error of alcohol tolerance (T) as the difference of MET between the second and first exposure
+1603	WolbachiaStatus_PCR	28	Richardson et al., 2012	integrated	summary		167	0	0	167	true	false	NA	NA	Wolbachia infection status by PCR
+1604	Reads_Total	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Total number of reads
+1605	Total_Number_bp	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	Nucleotides	Total number of base pair
+1606	Wolbachia_Map_Reads	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Wolbachia number of reads mapped
+1608	Wolbachia_Depth_Cov	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Wolbachia depth of coverage
+1609	Wolbachi_Consens_Len	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Wolbachia consensus length
+1610	Wolbachi_Consens_Dif	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Wolbachia reference consensus difference
+1613	Wolbachi_Breadth_Cov	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Wolbachia breadth of coverage
+1614	WolbachiaStatus	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	false	NA	NA	Wolbachia infection status (2 = infected, 1 = not infected)
+1615	Mitochon_Mapped_Read	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Mitochondrial DNA number of reads mapped
+1617	Mitochon_Depth_Cov	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Mitochondrial DNA depth of coverage
+1618	Mitochon_Consens_Len	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	Nucleotides	Mitochondrial DNA consensus length
+1619	Mitochon_Consens_Dif	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	mtDNA reference consensus difference
+1622	Mitochon_Breadth_Cov	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	mtDNA breadth of coverage (%nucleotides in the consensus sequence vs length of the reference sequence)
+1623	Nuclear_Mapped_Reads	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Nuclear DNA number of reads mapped
+1625	Nuclear_Depth_Cov	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Nuclear DNA depth of coverage
+1626	Nuclear_Consensu_Len	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Nuclear DNA consensus length
+1627	Nuclear_Consensu_Dif	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Nuclear DNA reference consensus difference
+1630	Nuclear_Breadth_Cov	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	true	NA	NA	Nuclear DNA breadth of coverage
+1631	Mitochondrial_Clade	28	Richardson et al., 2012	integrated	summary		174	0	0	174	false	false	NA	NA	Mitochondrial clade
+1632	Mitochon_Hap_COI2160	28	Richardson et al., 2012	integrated	summary		174	0	0	174	false	false	NA	NA	Mitochondrial Haplotype COI_2160 (<a href="http://dx.doi.org/10.1093/molbev/msn199">Nunes et al. 2008</a>)
+1633	Mitochon_Hap_COI2187	28	Richardson et al., 2012	integrated	summary		174	0	0	174	false	false	NA	NA	Mitochondrial Haplotype COI_2187 (<a href="http://dx.doi.org/10.1093/molbev/msn199">Nunes et al. 2008</a>)
+1634	Mitochon_Haplotype	28	Richardson et al., 2012	integrated	summary		174	0	0	174	true	false	NA	NA	Mitochondrial haplotype categorization
+1635	mn_Aggression_Social	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	mean	NA	Mean aggression score of socially reared lines
+1636	se_Aggression_Social	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	standard error	NA	SE aggression score of socially reared lines
+1637	mn_Aggressi_Soci_ADJ	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	mean	NA	Adjusted line mean aggression score of socially reared lines
+1639	mn_Aggressi_Isolated	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	mean	NA	Mean aggression score of socially isolated reared lines
+1640	se_Aggressi_Isolated	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	standard error	NA	Standard error of the average aggression score of socially isolated reared lines
+1641	mn_Aggressi_Isol_ADJ	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	mean	NA	Adjusted line mean aggression score of socially isolated reared lines
+1643	Aggression_GSEI	29	Rohde et al., 2017	integrated	summary		87	0	87	0	true	true	mean	NA	Measure of genotype-by-social-environment interaction (GSEI) computed as the difference between adjusted line means for the social and socially isolated environment 
+1644	mn_AggressionScore	30	Shorter et al., 2015	integrated	summary		200	0	200	0	true	true	mean	NA	Adjusted Mean Aggression Score
+1645	Hobo_Relative_Cov	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	NA	Relative coverage of the <i>Hobo</i> Elements
+1646	CN_Hobo_TIDAL	31	Srivastav et al., 2017	integrated	summary		50	0	0	50	true	true	NA	NA	<i>Hobo</i> element copy number based on TIDAL annotation
+1647	CN_Hobo_TIDAL_W	31	Srivastav et al., 2017	integrated	summary		50	0	0	50	true	true	NA	NA	<i>Hobo</i> element copy number based on TIDAL annotation (weighted according to its freq. in chr.)
+1648	CN_Hobo_TEMP	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	NA	<i>Hobo</i> element copy number based on TEMP annotation
+1649	CN_Hobo_TEMP_W	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	NA	<i>Hobo</i> element copy number based on TEMP annotation (weighted according to its freq. in chr.)
+1650	pc_FL_Hobo_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>Hobo</i> elements, estimated using HISAT/StringTie
+1651	pc_CN_Hobo_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>CN</i> structural variation in the genomic <i>Hobo</i> elements, estimated using HISAT/StringTie
+1652	pc_FLCN_Hobo_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FL/CN</i> ratio of structural variation in the genomic <i>Hobo</i> elements, estimated using HISAT/StringTie
+1653	pc_FL_Hobo_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>Hobo</i> elements, estimated using HISAT/Cufflinks
+1654	pc_CN_Hobo_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>CN</i> structural variation in the genomic <i>Hobo</i> elements, estimated using HISAT/Cufflinks
+1655	pc_FLCN_Hobo_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FL/CN</i> ratio of structural variation in the genomic <i>Hobo</i> elements, estimated using HISAT/Cufflinks
+1656	pc_FL_PElem_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>P</i>-elements, estimated using HISAT/Cufflinks
+1657	pc_KP_PElem_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>KP</i> structural variation in the genomic <i>P</i>-elements, estimated using HISAT/Cufflinks
+1658	pc_Deletion_PElem_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of other deletion derivatives, as a measure of structural variation in the genomic <i>P</i>-elements, estimated using HISAT/Cufflinks
+1659	pc_FPKP_PElem_HC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FP/KP</i> ratio of structural variation in the genomic <i>P</i>-elements, estimated using HISAT/Cufflinks
+1660	pc_FL_PElem_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>P</i>-elements, estimated using HISAT/StringTie
+1661	pc_KP_PElem_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>KP</i> structural variation in the genomic <i>P</i>-elements, estimated using HISAT/StringTie
+1662	pc_Deletion_PElem_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of other deletion derivatives, as a measure of structural variation in the genomic <i>P</i>-elements, estimated using HISAT/StringTie
+1663	pc_FPKP_PElem_HS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FP/KP</i> ratio of structural variation in the genomic <i>P</i>-elements, estimated using HISAT/StringTie
+1664	pc_FL_PElem_GC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>P</i>-elements, estimated using gsnap/Cufflinks
+1665	pc_KP_PElem_GC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>KP</i> structural variation in the genomic <i>P</i>-elements, estimated using gsnap/Cufflinks
+1666	pc_Deletion_PElem_GC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of other deletion derivatives, as a measure of structural variation in the genomic <i>P</i>-elements, estimated using gsnap/Cufflinks
+1667	pc_FPKP_PElem_GC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FP/KP</i> ratio of structural variation in the genomic <i>P</i>-elements, estimated using gsnap/Cufflinks
+1668	pc_FL_PElem_GS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>P</i>-elements, estimated using gsnap/StringTie
+1669	pc_KP_PElem_GS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>KP</i> structural variation in the genomic <i>P</i>-elements, estimated using gsnap/StringTie
+1670	pc_Deletion_PElem_GS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of other deletion derivatives, as a measure of structural variation in the genomic <i>P</i>-elements, estimated using gsnap/StringTie
+1671	pc_FPKP_PElem_GS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FP/KP</i> ratio of structural variation in the genomic <i>P</i>-elements, estimated using gsnap/StringTie
+1672	pc_FL_PElem_SC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>P</i>-elements, estimated using STAR/Cufflinks
+1673	pc_KP_PElem_SC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>KP</i> structural variation in the genomic <i>P</i>-elements, estimated using STAR/Cufflinks
+1674	pc_Deletion_PElem_SC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of other deletion derivatives, as a measure of structural variation in the genomic <i>P</i>-elements, estimated using STAR/Cufflinks
+1675	pc_FPKP_PElem_SC	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FP/KP</i> ratio of structural variation in the genomic <i>P</i>-elements, estimated using STAR/Cufflinks
+1676	pc_FL_PElem_SS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>FL</i> structural variation in the genomic <i>P</i>-elements, estimated using STAR/StringTie
+1677	pc_KP_PElem_SS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of <i>KP</i> structural variation in the genomic <i>P</i>-elements, estimated using STAR/StringTie
+1678	pc_Deletion_PElem_SS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	Proportion of other deletion derivatives, as a measure of structural variation in the genomic <i>P</i>-elements, estimated using STAR/StringTie
+1679	pc_FPKP_PElem_SS	31	Srivastav et al., 2017	integrated	summary		52	0	0	52	true	true	NA	Proportion / Ratio	<i>FP/KP</i> ratio of structural variation in the genomic <i>P</i>-elements, estimated using STAR/StringTie
+1680	mn_Glucose_Pooled	32	Unckless et al., 2015	integrated	summary		145	0	145	0	true	true	mean	NA	Mean glucose quantity estimate (pooling flies from Low and High glucose diets)
+1681	mn_Glucose_HighDiet	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	mean	NA	Mean glucose quantity estimate (High glucose diet)
+1682	mn_Glucose_LowDiet	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	mean	NA	Mean glucose quantity estimate (Low glucose diet)
+1683	mn_Glycerol_Pooled	32	Unckless et al., 2015	integrated	summary		145	0	145	0	true	true	mean	NA	Mean glycerol quantity estimate (pooling flies from Low and High glucose diets)
+1684	mn_Glycerol_HighDiet	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	mean	NA	Mean glycerol quantity estimate (High glucose diet)
+1685	mn_Glycerol_LowDiet	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	mean	NA	Mean glycerol quantity estimate (Low glucose diet)
+1686	mn_Glycogen_Pooled	32	Unckless et al., 2015	integrated	summary		145	0	145	0	true	true	mean	NA	Mean glycogen quantity estimate (pooling flies from Low and High glucose diets)
+1687	mn_Glycogen_HighDiet	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	mean	NA	Mean glycogen quantity estimate (High glucose diet)
+1688	mn_Glycogen_LowDiet	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	mean	NA	Mean glycogen quantity estimate (Low glucose diet)
+1689	mn_Triglyceride_Pool	32	Unckless et al., 2015	integrated	summary		145	0	145	0	true	true	mean	NA	Mean triglyceride quantity estimate (pooling flies from Low and High glucose diets)
+1690	mn_Triglyceri_HiDiet	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	mean	NA	Mean triglyceride quantity estimate (High glucose diet)
+1691	mn_Triglyceri_LoDiet	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	mean	NA	Mean triglyceride quantity estimate (Low glucose diet)
+1692	mn_Protein_Pooled	32	Unckless et al., 2015	integrated	summary		145	0	145	0	true	true	mean	NA	Mean protein quantity estimate (pooling flies from Low and High glucose diets)
+1693	mn_Protein_HighDiet	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	mean	NA	Mean protein quantity estimate (High glucose diet)
+1694	mn_Protein_LowDiet	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	mean	NA	Mean protein quantity estimate (Low glucose diet)
+1695	mn_Weight_PooledDiet	32	Unckless et al., 2015	integrated	summary		145	0	145	0	true	true	mean	µg	Mean weight (pooling flies from Low and High glucose diets)
+1696	mn_Weight_HighDiet	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	mean	µg	Mean weight (High glucose diets)
+1697	mn_Weight_LowDiet	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	mean	µg	Mean weight (Low glucose diets)
+1698	PC1_Nutri_Score_Low	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	NA	NA	First Principal Component of the full nutritional dataset (low glucose diet)
+1699	PC2_Nutri_Score_Low	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	NA	NA	Second Principal Component of the full nutritional dataset (low glucose diet)
+1700	PC3_Nutri_Score_Low	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	NA	NA	Third Principal Component of the full nutritional dataset (low glucose diet)
+1701	PC4_Nutri_Score_Low	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	NA	NA	Fourth Principal Component of the full nutritional dataset (low glucose diet)
+1702	PC5_Nutri_Score_Low	32	Unckless et al., 2015	integrated	summary		150	0	150	0	true	true	NA	NA	Fifth Principal Component of the full nutritional dataset (low glucose diet)
+1703	PC1_Nutri_Score_High	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	NA	NA	First Principal Component of the full nutritional dataset (high glucose diet)
+1704	PC2_Nutri_Score_High	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	NA	NA	Second Principal Component of the full nutritional dataset (high glucose diet)
+1705	PC3_Nutri_Score_High	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	NA	NA	Third Principal Component of the full nutritional dataset (high glucose diet)
+1706	PC4_Nutri_Score_High	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	NA	NA	Fourth Principal Component of the full nutritional dataset (high glucose diet)
+1707	PC5_Nutri_Score_High	32	Unckless et al., 2015	integrated	summary		147	0	147	0	true	true	NA	NA	Fifth Principal Component of the full nutritional dataset (high glucose diet)
+1718	LT50_Metarhizium_Ani	35	Wang et al., 2017	integrated	summary		188	188	188	0	true	true	NA	Days	Lifespan measured as the time required for half the flies to die (LT<sub>50</sub>) after infection with <i>Metarhizium anisopliae</i> (Ma549)
+1719	LT50_Pseudomonas_Aer	35	Wang et al., 2017	integrated	summary		81	81	81	0	true	true	NA	Days	Lifespan measured as the time required for half the flies to die (LT<sub>50</sub>) after infection with <i>Pseudomonas aeruginosa</i> (Pa14)
+1720	Paraquat_Resistance	36	Weber et al., 2012	integrated	summary		167	167	167	0	true	true	NA	Hours	Survival time as a measure for oxidative stress resistance to paraquat oxidizing agent
+1721	MenadioneSodBi_Resis	36	Weber et al., 2012	integrated	summary		167	167	167	0	true	true	NA	Hours	Survival time as a measure for oxidative stress resistance to menadione sodium bisulfite (MSB) oxidizing agent
+1722	gp_Dev_Time_Lead	37	Zhou et al., 2016	integrated	summary		189	184	188	0	false	false	NA	NA	Development time performer group for larvae placed on medium supplemented with 0.5 mM lead acetate (lead-poisoned food)
+1723	gp_Viability_Lead	37	Zhou et al., 2016	integrated	summary		199	0	0	199	false	false	NA	NA	Viability performer group for larvae placed on medium supplemented with 0.5 mM lead acetate (lead-poisoned food)
+1724	pc_MB_Alpha_Normal	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of normal α lobe in Mushroom Body (MB) morphology of the brain
+1725	pc_MB_Alpha_Thin	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of thin α lobe in Mushroom Body (MB) morphology of the brain
+1726	pc_MB_Alpha_Short	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of short α lobe in Mushroom Body (MB) morphology of the brain
+1727	pc_MB_Alpha_Missing	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of missing α lobe in Mushroom Body (MB) morphology of the brain
+1728	pc_MB_Alpha_Abnormal	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of abnormal α lobe in Mushroom Body (MB) morphology of the brain
+1729	pc_MB_Beta_Normal	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of normal β lobe in Mushroom Body (MB) morphology of the brain
+1730	pc_MB_Beta_Thin	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of thin β lobe in Mushroom Body (MB) morphology of the brain
+1731	pc_MB_Beta_Short	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of short β lobe in Mushroom Body (MB) morphology of the brain
+1732	pc_MB_Beta_Missing	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of missing β lobe in Mushroom Body (MB) morphology of the brain
+1733	pc_MB_Beta_Fusion	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of fusion β lobe in Mushroom Body (MB) morphology of the brain
+1734	pc_MB_Beta_Abnormal	38	Zwarts et al., 2015	integrated	summary		40	0	40	0	true	true	NA	Proportion / Ratio	Percentage of abnormal β lobe in Mushroom Body (MB) morphology of the brain
+1736	Circadian_Per_MESA	39	Harbison et al., 2018	integrated	summary		167	161	166	0	true	true	NA	Hours	Circadian period Ʈ calculated using the Maximum Entropy Spectral Analysis (MESA) method
+1737	Circadian_Per_ChiSq	39	Harbison et al., 2018	integrated	summary		167	161	166	0	true	true	NA	Hours	Circadian period Ʈ calculated using the Chi square Periodogram method
+1738	Rhythmicity_Index	39	Harbison et al., 2018	integrated	summary		167	167	167	0	true	true	NA	NA	Rhythmicity Index as a measure of how consistent the fly’s daily activity patterns are
+1957	300	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	300 nm absorbance of the supernatant
+1958	310	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	310 nm absorbance of the supernatant
+1959	320	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	320 nm absorbance of the supernatant
+1960	330	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	330 nm absorbance of the supernatant
+1961	340	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	340 nm absorbance of the supernatant
+1962	350	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	350 nm absorbance of the supernatant
+1963	360	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	360 nm absorbance of the supernatant
+1964	370	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	370 nm absorbance of the supernatant
+1965	380	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	380 nm absorbance of the supernatant
+1966	390	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	390 nm absorbance of the supernatant
+1967	400	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	400 nm absorbance of the supernatant
+1968	410	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	410 nm absorbance of the supernatant
+1969	420	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	420 nm absorbance of the supernatant
+1970	430	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	430 nm absorbance of the supernatant
+1971	440	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	440 nm absorbance of the supernatant
+1972	450	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	450 nm absorbance of the supernatant
+1973	460	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	460 nm absorbance of the supernatant
+1974	470	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	470 nm absorbance of the supernatant
+1975	480	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	480 nm absorbance of the supernatant
+1976	490	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	490 nm absorbance of the supernatant
+1977	500	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	500 nm absorbance of the supernatant
+1978	510	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	510 nm absorbance of the supernatant
+1979	520	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	520 nm absorbance of the supernatant
+1980	530	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	530 nm absorbance of the supernatant
+1981	540	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	540 nm absorbance of the supernatant
+1982	550	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	550 nm absorbance of the supernatant
+1983	560	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	560 nm absorbance of the supernatant
+1984	570	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	570 nm absorbance of the supernatant
+1985	580	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	580 nm absorbance of the supernatant
+1986	590	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	590 nm absorbance of the supernatant
+1987	600	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	600 nm absorbance of the supernatant
+1988	610	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	610 nm absorbance of the supernatant
+1989	620	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	620 nm absorbance of the supernatant
+1990	630	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	630 nm absorbance of the supernatant
+1991	640	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	640 nm absorbance of the supernatant
+1992	650	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	650 nm absorbance of the supernatant
+1993	660	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	660 nm absorbance of the supernatant
+1994	670	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	670 nm absorbance of the supernatant
+1995	680	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	680 nm absorbance of the supernatant
+1996	690	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	690 nm absorbance of the supernatant
+1997	700	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	700 nm absorbance of the supernatant
+2088	0.5μg/mL survivorship phenotype	98	Green et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	Phenotype survivorship for 0
+2089	1μg/mL survivorship phenotype	98	Green et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	5%μg/mL Chlorantraniliprole
+2090	2μg/mL survivorship phenotype	98	Green et al., 2018	accepted	summary		151	0	0	151	true	true	NA	NA	 Phenotype survivorship for 1.0%μg/mL Chlorantraniliprole
+2091	3μg/mL survivorship phenotype	98	Green et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	 Phenotype survivorship for 2.0%μg/mL Chlorantraniliprole
+2092	4μg/mL survivorship phenotype	98	Green et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	 Phenotype survivorship for 3.0%μg/mL Chlorantraniliprole
+2093	5μg/mL survivorship phenotype	98	Green et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	 Phenotype survivorship for 4.0%μg/mL Chlorantraniliprole
+2102	2-Phosphoglyceric Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	2-Phosphoglyceric Acid Qty. across diets
+2103	G1P	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	G1P Qty. across diets
+2107	3-Hydroxybutyric Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	3-Hydroxybutyric Acid Qty. across diets
+2108	Succinate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Succinate Qty. across diets 
+2109	Alpha-Ketoglutaric Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Alpha-Ketoglutaric Acid Qty. across diets
+2110	Glycine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glycine Qty. across diets
+2111	Sarcosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Sarcosine Qty. across diets 
+2112	Alanine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Alanine Qty. across diets
+2113	Cadaverine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Cadaverine Qty. across diets
+2114	Serine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Serine Qty. across diets
+2115	Proline	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Proline Qty. across diets
+2116	5-Aminovalerate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	5-Aminovalerate Qty. across diets
+2117	Valine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Valine Qty. across diets
+2118	Threonine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Threonine Qty. across diets
+2119	Pipecolate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Pipecolate Qty. across diets
+2120	Leucine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Leucine Qty. across diets
+2121	Asparagine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Asparagine Qty. across diets
+2122	Glutamine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glutamine Qty. across diets
+2123	Lysine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Lysine Qty. across diets
+2124	Glutamic acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glutamic acid Qty. across diets
+2125	Methionine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Methionine Qty. across diets
+2126	Histidine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Histidine Qty. across diets
+2127	Phenylalanine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Phenylalanine Qty. across diets 
+2128	1/3-Methylhistidine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	1/3-Methylhistidine Qty. across diets 
+2129	Arginine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Arginine Qty. across diets 
+2130	Tyrosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Tyrosine Qty. across diets
+2131	Cystine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Cystine Qty. across diets
+2132	isoValeric Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	isoValeric Acid Qty. across diets
+2133	Aminoisobutyrate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Aminoisobutyrate Qty. across diets 
+2134	Betaine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Betaine Qty. across diets 
+2135	Taurine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Taurine Qty. across diets
+2136	Aspartic Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Aspartic Acid Qty. across diets 
+2137	Carnitine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Carnitine Qty. across diets 
+2138	Epinephrine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Epinephrine Qty. across diets 
+2139	Glycerate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glycerate Qty. across diets
+2140	D-Leucic Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	D-Leucic Acid Qty. across diets 
+2141	Anthranilate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Anthranilate Qty. across diets 
+2142	2-Hydroxyglutarate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	2-Hydroxyglutarate Qty. across diets
+2143	Homogentisate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Homogentisate Qty. across diets 
+2144	Xanthurenate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Xanthurenate Qty. across diets 
+2145	Pantothenate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Pantothenate Qty. across diets 
+2146	Cystathionine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Cystathionine Qty. across diets
+2147	Tryptophan	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Tryptophan Qty. across diets
+2148	L-Kynurenine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	L-Kynurenine Qty. across diets
+2149	3-Hydroxykynurenine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	3-Hydroxykynurenine Qty. across diets 
+2150	Cytosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Cytosine Qty. across diets
+2151	Histamine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Histamine Qty. across diets
+2152	Cytidine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Cytidine Qty. across diets
+2153	Uridine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Uridine Qty. across diets
+2154	Adenosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Adenosine Qty. across diets
+2155	Inosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Inosine Qty. across diets
+2156	1-Methyladenosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	1-Methyladenosine Qty. across diets
+2157	Guanosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Guanosine Qty. across diets
+2158	1-Methylguanosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	1-Methylguanosine Qty. across diets
+2159	GMP	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	GMP Qty. across diets
+2160	Uracil	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Uracil Qty. across diets
+2161	Adenine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Adenine Qty. across diets
+2162	Hypoxanthine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Hypoxanthine Qty. across diets
+2163	Oxypurinol	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Oxypurinol Qty. across diets
+2164	Orotate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Orotate Qty. across diets
+2165	Allantoin	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Allantoin Qty. across diets
+2166	Urate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Urate Qty. across diets
+2167	Xanthosine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Xanthosine Qty. across diets
+2168	CMP	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	CMP Qty. across diets
+2169	AMP	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	AMP Qty. across diets
+2170	IMP	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	IMP Qty. across diets
+2171	ADP	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	ADP Qty. across diets
+2172	Choline	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Choline Qty. across diets
+2173	Methylmalonate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Methylmalonate Qty./
+2174	4-Pyridoxic acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	4-Pyridoxic acid Qty. across diets
+2175	Biotin	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Biotin Qty. across diets
+2176	Pyridoxal-5-P	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Pyridoxal-5-P Qty. across diets
+2177	Trimethylamine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Trimethylamine Qty. across diets
+2178	Acetylcholine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Acetylcholine Qty. across diets
+2179	Glycerol-3-P	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glycerol-3-P Qty. across diets
+2180	13-HODE	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	13-HODE Qty. across diets
+2181	Arachidonate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Arachidonate Qty. across diets
+2182	Acetylcarnitine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Acetylcarnitine Qty. across diets
+2183	Myristic Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Myristic Acid Qty. across diets
+2184	Margaric Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Margaric Acid Qty. across diets
+2185	Linoleic Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Linoleic Acid Qty. across diets
+2186	Linolenic Acid	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Linolenic Acid Qty. across diets
+2187	Sorbitol	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Sorbitol Qty. across diets
+2188	Glyceraldehyde	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glyceraldehyde Qty. across diets
+2189	Inositol	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Inositol Qty. across diets
+2190	Glucoronate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Glucoronate Qty. across diets
+2191	Lactose	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Lactose Qty. across diets
+2192	Sucrose	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Sucrose Qty. across diets
+2193	Ornithine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Ornithine Qty. across diets
+2194	Citrulline	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Citrulline Qty. across diets
+2195	Malondialdehyde	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Malondialdehyde Qty. across diets
+2196	Acetoacetate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Acetoacetate Qty. across diets
+2197	Putrescine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Putrescine Qty. across diets
+2198	Agmatine	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Agmatine Qty. across diets
+2199	Ribose-5-P	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Ribose-5-P Qty. across diets
+2200	Geranyl Pyrophosphate	100	Jin et al., 2020	accepted	summary		0	0	0	0			NA	NA	Geranyl Pyrophosphate Qty. across diets
+2245	f	105	Freda et al., 2019	accepted	raw	1	40	40	40	0	true	false	NA	NA	f
+2246	s	105	Freda et al., 2019	accepted	raw	1	40	40	39	0	false	false	NA	NA	s
+2247	n	105	Freda et al., 2019	accepted	raw	1	40	40	40	0	true	false	NA	NA	n
+2257	AVG PPL1 neurons	113	Davis et al., 2021	accepted	summary		199	0	0	199	true	true	NA	NA	Avg. Number of PPL1 neurons
+2296	Temperature	76	Lafuente et al., 2018	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2297	Body part	76	Lafuente et al., 2018	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2298	Length (mm)	76	Lafuente et al., 2018	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2299	Number of Individuals	61	Dembeck et al., 2015	accepted	summary		3	0	0	3	true	true	NA	NA	
+2300	Mean(T6)	61	Dembeck et al., 2015	accepted	summary		3	0	0	3	true	true	NA	NA	
+2301	Mean(T5)	61	Dembeck et al., 2015	accepted	summary		3	0	0	3	true	true	NA	NA	
+2302	SE (T6)	61	Dembeck et al., 2015	accepted	summary		3	0	0	3	true	true	NA	NA	
+2303	SE (T5)	61	Dembeck et al., 2015	accepted	summary		3	0	0	3	true	true	NA	NA	
+2304	treatment	95	Rohde et al., 2021	accepted	summary		0	0	0	0	false		NA	NA	
+2305	fecundity	95	Rohde et al., 2021	accepted	raw	1	6	0	0	6	true	false	NA	NA	
+2306	Dessication Survival (in hours)	102	Rajpurohit et al., 2018	accepted	summary		175	175	175	0	true	true	NA	NA	
+2307	Infection Status	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2308	Inversion Status (yes/no)	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2309	In(2L)t	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2310	In(2R)NS	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2311	In(2R)Y1	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2312	In(2R)Y2	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2313	In(2R)Y3	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2314	In(2R)Y4	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2315	In(2R)Y5	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2316	In(2R)Y6	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2317	In(2R)Y7	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2318	In(3L)P	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2319	In(3L)M	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2320	In(3L)Y	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2321	In(3R)P	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2322	In(3R)K	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2323	In(3R)Mo	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2324	In(3R)C	102	Rajpurohit et al., 2018	accepted	summary		175	0	175	0	false	false	NA	NA	
+2325	wing.size	106	Okada et al., 2019	accepted	summary		32	32	32	0	false	false	NA	NA	
+2326	absoluteCS	106	Okada et al., 2019	accepted	summary		32	32	32	0	true	true	NA	NA	
+2327	relativeCS	106	Okada et al., 2019	accepted	summary		32	32	32	0	true	true	NA	NA	
+2328	N	107	Rolandi et al., 2018	accepted	summary		34	34	34	0	true		NA	NA	
+2329	mean	107	Rolandi et al., 2018	accepted	summary		34	34	34	0	true	true	NA	NA	
+2330	se	107	Rolandi et al., 2018	accepted	summary		34	34	34	0	true	false	NA	NA	
+2331	Cohort	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	true	false	NA	NA	
+2332	Interaction Estimate	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2333	Interaction p-value	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2334	Mating Estimate (virgin effect)	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2335	Mating p-value	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2336	Sex Estimate (male effect)	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2337	Sex p-value	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2338	Age (hours)	120	Hoffman et al., 2021	accepted	raw	1	16	0	0	16	false	false	NA	NA	
+2339	Age_hours	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	true	true	NA	NA	
+2340	Mating_status	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2341	Mean longevities mated	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2342	mn_Longevity_Virgin	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	true	true	mean	NA	
+2343	Median longevities mated	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2344	Median longevities virgin	120	Hoffman et al., 2021	accepted	raw	1	12	0	0	12	false	false	NA	NA	
+2345	Deaths	120	Hoffman et al., 2021	accepted	summary		0	0	0	0	true		NA	NA	
+2346	Mating Status	120	Hoffman et al., 2021	accepted	raw	1	16	0	0	16	false	false	NA	NA	
+2347	WolbachiaStatus	17	Huang et al., 2014	integrated	summary		205	0	0	205	true	false	NA	NA	Wolbachia infection status (2 = infected, 1 = not infected)
+2348	Block	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	false	false	NA	NA	
+2349	Climb_Decline	44	Zhao et al., 2022	accepted	raw	1	17	0	0	17	true	false	NA	NA	
+2350	Climb_Week3	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2351	Climb_Week4	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2352	Climb_Week5	44	Zhao et al., 2022	accepted	raw	1	17	0	0	17	true	false	NA	NA	
+2353	Climb_Week6	44	Zhao et al., 2022	accepted	raw	1	17	0	0	17	true	false	NA	NA	
+2354	LogMAlpha	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2355	LogMiu45	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2356	LogMiu60	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2357	MBeta	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2358	Makeham	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2359	MeanLS	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2360	MedianLS	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2361	RepOutput_Day08	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2362	RepOutput_Day12	44	Zhao et al., 2022	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2363	additional_code	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2364	alias	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2365	diet	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2366	block	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2367	code	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	false	false	NA	NA	
+2368	image	89	Bonfini et al., 2021	accepted	raw	1	0	0	0	0	true	false	NA	NA	
+2369	Gut_Number	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2370	anteriorLength	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2371	middleLength	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2372	posteriorLength	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2373	anteriorwidth	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2374	posteriorwidth	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2375	totalLength	89	Bonfini et al., 2021	accepted	raw	1	200	0	0	200	true	false	NA	NA	
+2376	W2 Vial 1 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		148	0	0	148	true	true	NA	NA	
+2377	W2 Vial 2 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		148	0	0	148	true	true	NA	NA	
+2378	W2 Vial 3 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		148	0	0	148	true	true	NA	NA	
+2379	W2 Vial 4 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		132	0	0	132	true	true	NA	NA	
+2380	Week 2 mean ascension (cm)	48	Lavoy et al., 2018	accepted	summary		148	0	0	148	true	true	NA	NA	
+2381	W6 Vial 1 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		147	0	0	147	true	true	NA	NA	
+2382	W6 Vial 2 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		148	0	0	148	true	true	NA	NA	
+2383	W6 Vial 3 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		147	0	0	147	true	true	NA	NA	
+2384	W6 Vial 4 ascension (cm)	48	Lavoy et al., 2018	accepted	summary		132	0	0	132	true	true	NA	NA	
+2385	Week 6 mean ascension (cm)	48	Lavoy et al., 2018	accepted	summary		148	0	0	148	true	true	NA	NA	
+2386	Allele_11072708	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2387	Allele_11080173	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2388	Allele_11081287	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2389	Allele_13581579	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2390	Allele_13581582	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2391	Allele_13581589	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2392	Allele_13761853	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2393	Allele_13781355	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2394	Allele_14049489	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2395	Allele_14049491	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2396	Allele_14049501	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2397	Allele_3903304	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2398	Allele_4648968	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2399	Allele_9015205	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2400	CG14380 CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2401	CG42404 CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2402	Control Climbing Height	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2403	ControlDA	59	Lovejoy et al., 2021	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2404	DAControl	59	Lovejoy et al., 2021	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2405	DADifference	59	Lovejoy et al., 2021	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2406	DAParaquat	59	Lovejoy et al., 2021	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2407	FBS	59	Lovejoy et al., 2021	accepted	raw	1	75	0	0	75	true	false	NA	NA	
+2408	FC	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2409	FP	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2410	PQ Climbing Height	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2411	Paraquat Climbing Height	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2412	ParaquatDA	59	Lovejoy et al., 2021	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2413	RPL32 CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2414	RPL32C	59	Lovejoy et al., 2021	accepted	raw	1	12	0	0	12	true	false	NA	NA	
+2415	RPL32P	59	Lovejoy et al., 2021	accepted	raw	1	12	0	0	12	true	false	NA	NA	
+2416	Resistance	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2417	Sc2 CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2418	Sc2C	59	Lovejoy et al., 2021	accepted	raw	1	9	0	0	9	true	false	NA	NA	
+2419	Sc2P	59	Lovejoy et al., 2021	accepted	raw	1	9	0	0	9	true	false	NA	NA	
+2420	Susceptibility (C-PQ)	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2421	Susceptible	59	Lovejoy et al., 2021	accepted	raw	1	20	0	0	20	true	false	NA	NA	
+2422	Treatment (Control or Paraquat)	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2423	TyrR CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2424	TyrRC	59	Lovejoy et al., 2021	accepted	raw	1	11	0	0	11	true	false	NA	NA	
+2425	TyrRP	59	Lovejoy et al., 2021	accepted	raw	1	11	0	0	11	true	false	NA	NA	
+2426	Unnamed: 0	59	Lovejoy et al., 2021	accepted	raw	1	100	0	0	100	false	false	NA	NA	
+2427	cg14380C	59	Lovejoy et al., 2021	accepted	raw	1	11	0	0	11	true	false	NA	NA	
+2428	cg14380P	59	Lovejoy et al., 2021	accepted	raw	1	11	0	0	11	true	false	NA	NA	
+2429	cg42404C	59	Lovejoy et al., 2021	accepted	raw	1	12	0	0	12	true	false	NA	NA	
+2430	cg42404P	59	Lovejoy et al., 2021	accepted	raw	1	12	0	0	12	true	false	NA	NA	
+2431	cpo CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2432	cpoC	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2433	cpoP	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2434	nAcRalpha-34E CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2435	nachrC	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2436	nachrP	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2437	HSC70-4 CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2438	HscC	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2439	HscP	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2440	IscU CT value	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	false	false	NA	NA	
+2441	IscUC	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2442	IscUP	59	Lovejoy et al., 2021	accepted	raw	1	10	0	0	10	true	false	NA	NA	
+2443	MBS	59	Lovejoy et al., 2021	accepted	raw	1	75	0	0	75	true	false	NA	NA	
+2444	MC	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2445	MP	59	Lovejoy et al., 2021	accepted	raw	1	99	0	0	99	true	false	NA	NA	
+2446	Block	59	Lovejoy et al., 2021	accepted	raw	1	98	0	0	98	false	false	NA	NA	
+2447	HeightClimbed	59	Lovejoy et al., 2021	accepted	raw	1	100	0	0	100	true	false	NA	NA	
+2448	Treatment	59	Lovejoy et al., 2021	accepted	summary		0	0	0	0	false		NA	NA	
+2449	Vial	59	Lovejoy et al., 2021	accepted	raw	1	100	0	0	100	true	false	NA	NA	
+2450	BlockLetter	59	Lovejoy et al., 2021	accepted	raw	1	100	0	0	100	false	false	NA	NA	
+2451	Em Average % Mortality at Day 5	65	Wang et al., 2020	accepted	raw	1	20	20	20	0	false	false	NA	NA	
+2452	Em Rank	65	Wang et al., 2020	accepted	raw	1	20	20	20	0	false	false	NA	NA	
+2453	Lifespan s (Durham et al 2014)	65	Wang et al., 2020	accepted	raw	1	16	16	0	0	false	false	NA	NA	
+2454	Life Time Fecundity s (Durham et al 2014)	65	Wang et al., 2020	accepted	raw	1	16	16	0	0	false	false	NA	NA	
+2455	Ma549 LT50 (Wang et al 2017)	65	Wang et al., 2020	accepted	raw	1	20	20	0	0	false	false	NA	NA	
+2456	Ma549 LT50 Rank	65	Wang et al., 2020	accepted	raw	1	20	20	0	0	false	false	NA	NA	
+2457	Pa14 LT50 (Wang et al 2017)	65	Wang et al., 2020	accepted	raw	1	16	0	16	0	false	false	NA	NA	
+2458	Pa14 LT50 Rank	65	Wang et al., 2020	accepted	raw	1	16	0	16	0	false	false	NA	NA	
+2459	Wolbachia Infection Status (Mackay et al 2012)	65	Wang et al., 2020	accepted	raw	1	20	0	20	0	false	false	NA	NA	
+2460	Startle Response (Jordan et al 2012)	65	Wang et al., 2020	accepted	raw	1	18	0	18	0	false	false	NA	NA	
+2461	Negative Geotaxis (Jordan et al 2012)	65	Wang et al., 2020	accepted	raw	1	18	0	18	0	false	false	NA	NA	
+2462	Paraquat Resistance (Weber et al 2012)	65	Wang et al., 2020	accepted	raw	1	18	0	18	0	false	false	NA	NA	
+2463	MSB Resistance (Weber et al 2012)	65	Wang et al., 2020	accepted	raw	1	18	0	18	0	false	false	NA	NA	
+2464	Starvation Resistance (Mackay et al 2012)	65	Wang et al., 2020	accepted	raw	1	20	0	20	0	false	false	NA	NA	
+2465	Night Sleep Duration (Harbison et al 2014)	65	Wang et al., 2020	accepted	raw	1	18	0	18	0	false	false	NA	NA	
+2466	Night Bout Number (Harbison et al 2014)	65	Wang et al., 2020	accepted	raw	1	18	0	18	0	false	false	NA	NA	
+2467	condition	75	Bou Sleiman et al., 2020	accepted	raw	1	38	0	0	38	false	false	NA	NA	
+2468	resistance	75	Bou Sleiman et al., 2020	accepted	raw	1	38	0	0	38	false	false	NA	NA	
+2469	Vial	84	Riddle, 2020	accepted	summary		0	0	0	0	true		NA	NA	
+2470	EarlyAct	84	Riddle, 2020	accepted	raw	1	142	141	142	0	true	false	NA	NA	
+2471	LateAct	84	Riddle, 2020	accepted	raw	1	154	149	151	0	true	false	NA	NA	
+2472	PercentEarly	84	Riddle, 2020	accepted	raw	1	142	141	141	0	true	false	NA	NA	
+2473	VialNumber	84	Riddle, 2020	accepted	raw	1	154	149	152	0	false	false	NA	NA	
+2474	Average Lifespan	69	Patel et al., 2021	accepted	summary		193	0	0	193	true	true	NA	NA	
+2475	Activity/5min	78	Watanabe et al., 2018	accepted	raw	1	161	159	158	0	true	true	NA	NA	
+2476	ActivityTotal/2hrs	78	Watanabe et al., 2018	accepted	raw	1	161	159	158	0	true	true	NA	NA	
+2477	Treatment	78	Watanabe et al., 2018	accepted	summary		0	0	0	0	true		NA	NA	
+2481	sd_Lifespan_Env_18	40	Huang et al., 2020	integrated	summary		183	183	183	0	true	true	standard deviation	Days	Micro-environmental variance (ln<i>σ</i><sub>ε</sub>) at 18°C thermal environment
+2482	sd_Lifespan_Env_25	40	Huang et al., 2020	integrated	summary		186	186	186	0	true	true	standard deviation	Days	Micro-environmental variance (ln<i>σ</i><sub>ε</sub>) at 25°C thermal environment
+2483	sd_Lifespan_Env_28	40	Huang et al., 2020	integrated	summary		177	177	177	0	true	true	standard deviation	Days	Micro-environmental variance (ln<i>σ</i><sub>ε</sub>) at 28°C thermal environment
+2487	day_id	43	Rohde et al., 2019	accepted	raw	1	172	0	0	172	true	false	NA	NA	
+2488	treatment	43	Rohde et al., 2019	accepted	summary		0	0	0	0	true		NA	NA	
+2489	distance_cm	43	Rohde et al., 2019	accepted	raw	1	172	0	0	172	false	false	NA	NA	
+2490	treatment_ingestion	43	Rohde et al., 2019	accepted	raw	1	172	0	0	172	true	true	NA	NA	
+2491	midgut_mitosis_PA	79	Evangelou et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	MIDGUT MITOSIS - P.aeruginosa
+2492	Branching_O2_5pc	79	Evangelou et al., 2018	accepted	summary		151	0	0	151	true	true	NA	NA	Branching 5% O2
+2493	Survival_Paeruginosa	79	Evangelou et al., 2018	accepted	summary		142	0	0	142	true	true	NA	NA	SURVIVAL - P.aeruginosa
+2494	pc_Defecation_Paerug	79	Evangelou et al., 2018	accepted	summary		150	0	0	150	true	true	NA	NA	Defecation rate for <i>P. aeruginosa</i>
+2495	Fecal_PH_PAeruginosa	79	Evangelou et al., 2018	accepted	summary		150	0	0	150	true	true	NA	NA	FECAL pH - P.aeruginosa
+2496	Fecundity	79	Evangelou et al., 2018	accepted	summary		142	142	0	0	true	true	NA	NA	FECUNDITY
+2497	Date	80	Dean et al., 2018	accepted	raw	1	33	0	0	33	false	false	NA	NA	
+2498	Block	80	Dean et al., 2018	accepted	summary		0	0	0	0	false		NA	NA	
+2499	Rep	80	Dean et al., 2018	accepted	raw	1	33	0	0	33	true	false	NA	NA	
+2500	LatCop	80	Dean et al., 2018	accepted	raw	1	33	0	0	33	true	false	NA	NA	
+2501	promiscuity	80	Dean et al., 2018	accepted	raw	1	33	0	0	33	true	false	NA	NA	
+2502	LC50 phenotype	98	Green et al., 2018	accepted	summary		152	0	0	152	true	true	NA	NA	
+2503	alive	105	Freda et al., 2019	accepted	summary		0	0	0	0	true		NA	NA	
+2504	dead	105	Freda et al., 2019	accepted	raw	1	40	40	40	0	true	false	NA	NA	
+2505	rep	105	Freda et al., 2019	accepted	raw	1	40	40	40	0	true	false	NA	NA	
+2506	DA_mean	45	Chi et al., 2021	accepted	summary		198	0	0	198	true	true	NA	NA	
+2507	DA_sem	45	Chi et al., 2021	accepted	summary		198	0	0	198	true	true	NA	NA	
+2508	Baseline_mean	45	Chi et al., 2021	accepted	summary		198	0	0	198	true	true	NA	NA	
+2509	Baseline_sem	45	Chi et al., 2021	accepted	summary		198	0	0	198	true	true	NA	NA	
+2510	Starvation Resistance	45	Chi et al., 2021	accepted	summary		198	0	0	198	true	false	NA	NA	
+2511	Mean	73	Rohde et al., 2018	accepted	summary		204	0	0	204	true	true	NA	NA	
+2512	Resistance	46	Frochaux et al., 2020	accepted	summary		20	0	0	20	false	false	NA	NA	
+2513	CTmin 23C Mean	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2514	CTmin 23C SE	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2515	Inversion_2L_t	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	Genotype of the <i>In(2L)t</i> inversion named <i>t</i> on chromosome <i>2L</i>
+2516	Inversion_2R_NS	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	Genotype of the <i>In(2R)NS</i> inversion named <i>Nova Scotia</i> on chromosome <i>2R</i>
+2517	Inversion_3R_K	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	Genotype of the <i>In(3R)K</i> inversion named <i>Kodani</i> on chromosome <i>3R</i>
+2518	Inversion_3R_Mo	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	Genotype of the <i>In(3R)Mo</i> inversion named <i>Missouri</i> on chromosome <i>3R</i>
+2519	Inversion_3R_P	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	Genotype of the <i>In(3R)P</i> inversion named <i>Payne</i> on chromosome <i>3R</i>
+2520	V.AE Mean	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2521	V.AE SE	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2522	V.WE Mean	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2523	V.WE SE	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2524	V.plast Mean	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2525	V.plast SE	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2526	V.v.plast Mean	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2527	V.v.plast SE	47	Ørsted et al., 2017	accepted	raw	1	17	0	0	17	false	false	NA	NA	
+2528	WolbachiaStatus	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	Wolbachia infection status (2 = infected, 1 = not infected)
+2529	grp	47	Ørsted et al., 2017	accepted	raw	1	166	0	0	166	true	false	NA	NA	
+2530	Canton S(B)/DGRP	53	He et al., 2016	accepted	summary		203	0	0	203	true	true	NA	NA	
+2531	Sema-5cBG2386/DGRP	53	He et al., 2016	accepted	summary		203	0	0	203	true	true	NA	NA	
+2532	neurBG2391/DGRP	53	He et al., 2016	accepted	summary		203	0	0	203	true	true	NA	NA	
+2533	Mean	56	Campbell et al., 2019	accepted	summary		0	0	0	0	true	true	NA	NA	
+2534	SE	56	Campbell et al., 2019	accepted	summary		171	171	171	0	false	false	NA	NA	
+2535	Variance	56	Campbell et al., 2019	accepted	summary		171	171	171	0	false	false	NA	NA	
+2536	Flight phenotype score	57	Spierer et al., 2021	accepted	summary		197	197	197	0	true	true	NA	NA	
+2537	Larvae	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2538	Line_Status	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	false	false	NA	NA	
+2539	Mating	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2540	Temperature	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2541	Vial	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2542	daughters1	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2543	daughters2	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2544	daughters3	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2545	daughtersTotal	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2546	productivity1	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2547	productivity2	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2548	productivity3	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2549	productivityTotal	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2550	pupae3	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2551	sons1	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2552	sons2	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2553	sons3	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2554	sonsTotal	58	Rodrigues et al., 2022	accepted	raw	1	32	0	0	32	true	false	NA	NA	
+2555	Sample.size Experience 1	63	Duneau et al., 2018	accepted	summary		184	0	0	184	true	false	NA	NA	
+2556	Delta_Death.at.48h Experience 1	63	Duneau et al., 2018	accepted	summary		184	0	0	184	true	false	NA	NA	
+2557	Delta_Alive.at.48h Experience 1	63	Duneau et al., 2018	accepted	summary		184	0	0	184	true	false	NA	NA	
+2558	Sample.size Experience 2	63	Duneau et al., 2018	accepted	summary		194	0	0	194	true	false	NA	NA	
+2559	Delta_Death.at.48h Experience 2	63	Duneau et al., 2018	accepted	summary		194	0	0	194	true	false	NA	NA	
+2560	Delta_Alive.at.48h Experience 2	63	Duneau et al., 2018	accepted	summary		194	0	0	194	true	false	NA	NA	
+2561	Sample.size Experience 3	63	Duneau et al., 2018	accepted	summary		180	0	0	180	true	false	NA	NA	
+2562	Delta_Death.at.48h Experience 3	63	Duneau et al., 2018	accepted	summary		180	0	0	180	true	false	NA	NA	
+2563	Delta_Alive.at.48h Experience 3	63	Duneau et al., 2018	accepted	summary		180	0	0	180	true	false	NA	NA	
+2564	Sample.size Experience 4	63	Duneau et al., 2018	accepted	summary		193	0	0	193	true	false	NA	NA	
+2565	Delta_Death.at.48h Experience 4	63	Duneau et al., 2018	accepted	summary		193	0	0	193	true	false	NA	NA	
+2566	Delta_Alive.at.48h Experience 4	63	Duneau et al., 2018	accepted	summary		193	0	0	193	true	false	NA	NA	
+2567	Sample.size Experience 5	63	Duneau et al., 2018	accepted	summary		188	0	0	188	true	false	NA	NA	
+2568	Delta_Death.at.48h Experience 5	63	Duneau et al., 2018	accepted	summary		188	0	0	188	true	false	NA	NA	
+2569	Delta_Alive.at.48h Experience 5	63	Duneau et al., 2018	accepted	summary		188	0	0	188	true	false	NA	NA	
+2570	treatment	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	false	false	NA	NA	
+2571	time.without.dye	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	false	false	NA	NA	
+2572	time.on.dye	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	false	false	NA	NA	
+2573	number.of.flies	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	false	false	NA	NA	
+2574	Wavelength	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	false	false	NA	NA	
+2575	Deaths	85	Harrison et al., 2020	accepted	raw	1	188	0	0	188	true	false	NA	NA	
+2576	Carried	85	Harrison et al., 2020	accepted	raw	1	188	0	0	188	true	false	NA	NA	
+2577	Censored	85	Harrison et al., 2020	accepted	raw	1	188	0	0	188	true	false	NA	NA	
+2578	Flag1	85	Harrison et al., 2020	accepted	raw	1	188	0	0	188	true	false	NA	NA	
+2579	Flag2	85	Harrison et al., 2020	accepted	raw	1	188	0	0	188	true	false	NA	NA	
+2580	N	85	Harrison et al., 2020	accepted	raw	1	188	0	0	188	true	true	NA	NA	
+2581	food	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	false	false	NA	NA	
+2582	consumed	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	
+2583	alive	85	Harrison et al., 2020	accepted	raw	1	3	0	0	3	true	false	NA	NA	
+2584	Treatment	85	Harrison et al., 2020	accepted	raw	1	16	0	0	16	false	false	NA	NA	
+2585	NWMRC_Block	85	Harrison et al., 2020	accepted	raw	1	16	0	0	16	true	false	NA	NA	
+2586	lifespan	85	Harrison et al., 2020	accepted	raw	1	16	0	0	16	true	false	NA	NA	
+2587	line.weight	85	Harrison et al., 2020	accepted	raw	1	16	0	0	16	false	false	NA	NA	
+2614	Surv_AAmanitin_0_2ug	22	Mitchell et al., 2017	integrated	raw	1	186	0	0	186	true	true	NA	Number of flies	Number of hatching flies (out of 10) of first-instar larvae placed on toxic food with low mushroom toxin (α-amanitin) concentration (0.2µg/g)
+2615	Surv_AAmanitin_2ug	22	Mitchell et al., 2017	integrated	raw	1	186	0	0	186	true	true	NA	Number of flies	Number of hatching flies (out of 10) of first-instar larvae placed on toxic food with high mushroom toxin (α-amanitin) concentration (2µg/g)
+2616	LC50_Alpha_Amanitin	22	Mitchell et al., 2017	integrated	raw	1	36	0	0	36	true	true	NA	µg/g	50% lethal concentration (LC<sub>50</sub>) to mushroom toxin (α-amanitin)
+2617	Ecc15_FracDead_10d	4	Bou Sleiman et al., 2015	integrated	summary		79	79	0	0	true	true	mean	Proportion / Ratio	Percentage death after 10 days post-infection with <i>Erwinia carotovora carotovora 15 (Ecc15)</i> (averaged over three replicates)
+2618	mn_PhototaxDark_wk1	6	Carbone et al., 2016	integrated	summary		35	33	35	0	true	true	mean	NA	Mean of the phototaxis (moving towards a light source) response score in complete darkness, i.e. without light stimulus (1 week old = young flies)
+2619	se_PhototaxDark_wk1	6	Carbone et al., 2016	integrated	summary		35	33	35	0	true	true	standard error	NA	Standard error of the phototaxis (moving towards a light source) response score in complete darkness, i.e. without light stimulus (1 week old = young flies)
+2620	mn_PhototaxLight_wk1	6	Carbone et al., 2016	integrated	summary		34	34	33	0	true	true	mean	NA	Mean of the phototaxis (moving towards a light source) response score with light stimulus (1 week old = young flies)
+2621	se_PhototaxLight_wk1	6	Carbone et al., 2016	integrated	summary		34	34	33	0	true	true	standard error	NA	Standard error of the phototaxis (moving towards a light source) response score with light stimulus (1 week old = young flies)
+2622	mn_Protein	7	Chaston et al., 2016	integrated	summary		87	0	87	0	true	true	mean	µg/mg	Mean protein content (in µg/mg dry weight)
+2623	se_Protein	7	Chaston et al., 2016	integrated	summary		86	0	86	0	true	true	standard error	µg/mg	Standard error of mean of protein content (in µg/mg dry weight)
+2624	mn_Glycogen	7	Chaston et al., 2016	integrated	summary		61	0	61	0	true	true	mean	µg/mg	Mean glycogen content (in µg/mg dry weight)
+2625	se_Glycogen	7	Chaston et al., 2016	integrated	summary		61	0	61	0	true	true	standard error	µg/mg	Standard error of mean of glycogen content (in µg/mg dry weight)
+2626	mn_Glucose	7	Chaston et al., 2016	integrated	summary		92	0	92	0	true	true	mean	µg/mg	Mean glucose content (in µg/mg dry weight)
+2627	se_Glucose	7	Chaston et al., 2016	integrated	summary		92	0	92	0	true	true	standard error	µg/mg	Standard error of mean of glucose content (in µg/mg dry weight)
+2628	mn_TAG_Glycerol	7	Chaston et al., 2016	integrated	summary		63	0	63	0	true	true	mean	µg/mg	Mean triglyceride (TAG) content (in µg/mg dry weight)
+2629	se_TAG_Glycerol	7	Chaston et al., 2016	integrated	summary		63	0	63	0	true	true	standard error	µg/mg	Standard error of mean of triglyceride (TAG) content (in µg/mg dry weight)
+2630	pc_Acetobacteraceae	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	Proportion / Ratio	Ratio of <i>Acetobacteraceae</i> family in taxon abundance amongst whole microbiota composition
+2631	pc_Lactobacillaceae	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	Proportion / Ratio	Ratio of <i>Lactobacillaceae</i> family in taxon abundance amongst whole microbiota composition
+2632	pc_Xanthomonadaceae	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	Proportion / Ratio	Ratio of <i>Xanthomonadaceae</i> family in taxon abundance amongst whole microbiota composition
+2633	pc_Comamonadaceae	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	Proportion / Ratio	Ratio of <i>Comamonadaceae</i> family in taxon abundance amongst whole microbiota composition
+2634	pc_Other	7	Chaston et al., 2016	integrated	summary		79	0	79	0	true	true	NA	Proportion / Ratio	Ratio of Other taxon families abundance (i.e. NOT <i>Acetobacteraceae</i>, <i>Comamonadaceae</i>, <i>Lactobacillaceae</i>, nor <i>Xanthomonadaceae</i>) amongst whole microbiota composition
+2635	AbdominaPigmentT5	10	Dembeck et al., 2015	integrated	raw	1	175	175	0	0	true	true	NA	Proportion / Ratio	Abdominal pigmentation score as the proportion of melanization of tergites 5 (T5)
+2636	AbdominaPigmentT6	10	Dembeck et al., 2015	integrated	raw	1	175	175	0	0	true	true	NA	Proportion / Ratio	Abdominal pigmentation score as the proportion of melanization of tergites 6 (T6)
+2637	Food_Intake	13	Garlapow et al., 2015	integrated	raw	1	183	183	182	0	true	true	NA	µL/fly	Food intake as the total consumption of 4% sucrose over 24 hours
+2638	pc_Surv_MeHg_0	23	Montgomery et al., 2014	integrated	raw	1	173	0	0	173	true	true	NA	Proportion / Ratio	Eclosion rate (adult hatching) at 0µM methylmercury (MeHg) dose
+2639	pc_Surv_MeHg_5	23	Montgomery et al., 2014	integrated	raw	1	173	0	0	173	true	true	NA	Proportion / Ratio	Eclosion rate (adult hatching) at 5µM methylmercury (MeHg) dose
+2640	pc_Surv_MeHg_10	23	Montgomery et al., 2014	integrated	raw	1	173	0	0	173	true	true	NA	Proportion / Ratio	Eclosion rate (adult hatching) at 10µM methylmercury (MeHg) dose
+2641	pc_Surv_MeHg_15	23	Montgomery et al., 2014	integrated	raw	1	173	0	0	173	true	true	NA	Proportion / Ratio	Eclosion rate (adult hatching) at 15µM methylmercury (MeHg) dose
+2642	pc_Surv_MeHg_0_CAFF	23	Montgomery et al., 2014	integrated	raw	1	173	0	0	173	true	true	NA	Proportion / Ratio	Eclosion rate (adult hatching) at 0µM methylmercury (MeHg) dose on food supplemented with 2mM caffeine
+2643	pc_Surv_MeHg_10_CAFF	23	Montgomery et al., 2014	integrated	raw	1	173	0	0	173	true	true	NA	Proportion / Ratio	Eclosion rate (adult hatching) at 10µM methylmercury (MeHg) dose on food supplemented with 2mM caffeine
+2644	Femur_Length_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Femur length of the first thoracic leg (T1)
+2645	Femur_Length_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Femur length of the second thoracic leg (T2)
+2646	Tibia_Length_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Tibia length of the first thoracic leg (T1)
+2647	Tibia_Length_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Tibia length of the second thoracic leg (T2)
+2648	Tarsus_Length_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Tarsus length of the first thoracic leg (T1)
+2649	Tarsus_Length_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Tarsus length of the second thoracic leg (T2)
+2650	Total_Leg_Length_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Total length of the first thoracic leg (T1)
+2651	Total_Leg_Length_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	NA	Total length of the second thoracic leg (T2)
+2652	pc_Femur_Leg_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	Proportion / Ratio	Ratio of femur coverage in the first thoracic leg (T1)
+2653	pc_Femur_Leg_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	Proportion / Ratio	Ratio of femur coverage in the second thoracic leg (T2)
+2654	pc_Tibia_Leg_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	Proportion / Ratio	Ratio of tibia coverage in the first thoracic leg (T1)
+2655	pc_Tibia_Leg_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	Proportion / Ratio	Ratio of tibia coverage in the second thoracic leg (T2)
+2656	pc_Tarsus_Leg_T1	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	Proportion / Ratio	Ratio of tarsus coverage in the first thoracic leg (T1)
+2657	pc_Tarsus_Leg_T2	14	Grubbs et al., 2013	integrated	raw	1	117	117	117	0	true	true	NA	Proportion / Ratio	Ratio of tarsus coverage in the second thoracic leg (T2)
+2758	WolbachiaStatus	21	MacKay et al., 2012	integrated	summary		166	0	0	166	true	false	NA	NA	Wolbachia infection status (2 = infected, 1 = not infected)
+2759	Novel_TEs	21	MacKay et al., 2012	integrated	summary		147	0	0	147	true	true	NA	NA	Number of novel transposable elements (TEs)
+2760	Shared_TEs	21	MacKay et al., 2012	integrated	summary		147	0	0	147	true	true	NA	NA	Number of shared transposable elements (TEs)
+2761	Unique_TEs	21	MacKay et al., 2012	integrated	summary		147	0	0	147	true	true	NA	NA	Number of unique transposable elements (TEs), which exists in only one line (subset of Novel TEs phenotype)
+2762	Total_TEs	21	MacKay et al., 2012	integrated	summary		147	0	0	147	true	true	NA	NA	Total number of transposable elements (TEs)
+2763	SegregVariants_X	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	NA	Number of segregating variants on chromosome X
+2764	pc_SegregVariants_X	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome X
+2765	SegregVariants_2L	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	NA	Number of segregating variants on chromosome 2L
+2766	pc_SegregVariants_2L	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 2L
+2767	SegregVariants_2R	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	NA	Number of segregating variants on chromosome 2R
+2768	pc_SegregVariants_2R	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 2R
+2769	SegregVariants_3L	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	NA	Number of segregating variants on chromosome 3L
+2770	pc_SegregVariants_3L	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 3L
+2771	SegregVariants_3R	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	NA	Number of segregating variants on chromosome 3R
+2772	pc_SegregVariants_3R	21	MacKay et al., 2012	integrated	summary		168	0	0	168	true	true	NA	Proportion / Ratio	Percentage of segregating variants on chromosome 3R
+2797	ChillComaRec	24	Morgante et al., 2015	integrated	raw	1	174	174	174	0	true	true	NA	NA	
+2798	StarvationRes	24	Morgante et al., 2015	integrated	raw	1	197	197	197	0	true	true	NA	NA	
+2799	StartleRes	24	Morgante et al., 2015	integrated	raw	1	201	201	201	0	true	true	NA	NA	
+2800	Lifespan_Caffeine	26	Najarro et al., 2015	integrated	raw	1	164	164	0	0	true	true	NA	Hours	Lifespan on caffeine (caffeine resistance) on 1% caffeine-supplemented media
+2801	LifespanBoricAcid	27	Najarro et al., 2017	integrated	raw	1	163	163	0	0	true	true	NA	Hours	Lifespan on boric acid of mated females exposed to media supplemented with 1.5% boric acid
+2811	Survival_Radiation	33	Vaisnav et al., 2014	integrated	raw	1	161	0	161	0	true	true	NA	Proportion / Ratio	Percentage of survival after irradiation with 1382 Gy
+2812	Ovarian_Atrophy	31	Srivastav et al., 2017	integrated	raw	1	33	33	0	0	true	false	NA	NA	Ovarian atrophy (lacking egg chambers) as a measure for hybrid dysgenesis
+2814	Head_Width	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Head Width (widest part of the head, including eyes)
+2815	Eye_Interocular_Dist	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Eye inter-ocular distance (IOD)
+2816	Shoulder_Width	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Shoulder Width
+2817	Thorax_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Thorax Length
+2818	Eye_Area	34	Vonesch et al., 2016	integrated	raw	1	149	149	148	0	true	true	NA	mm²	Eye area
+2819	Wing_Area	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Total wing area
+2820	Wing_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Wing Length
+2821	Wing_Width	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Wing Width
+2822	Wing_CentroidSize	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	NA	Wing Centroid size
+2823	Wing_Anterior_to_L2	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Measures for the size of the anterior part of the wing, as the distance between the anteroposterior (AP) boundary and L2 vein
+2824	Wing_Posterior_to_L5	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Measures for the size of the posterior part of the wing, as the distance between the anteroposterior (AP) boundary and L5 vein
+2825	Wing_Intervein_Area1	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	NA	Wing intervein area 1
+2826	Wing_Intervein_Area2	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 2
+2827	Wing_Intervein_Area3	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 3
+2828	Wing_Intervein_Area4	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 4
+2829	Wing_Intervein_Area5	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 5
+2830	Wing_Intervein_Area6	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 6
+2831	Wing_Intervein_Area7	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 7
+2832	Wing_Intervein_Area8	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm²	Wing intervein area 8
+2833	Wing_L1_Vein_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Length of the L1 vein in the wing
+2834	Wing_L2_Vein_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Length of the L2 vein in the wing
+2835	Wing_L3_Vein_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Length of the L3 vein in the wing
+2836	Wing_L4_Vein_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Length of the L4 vein in the wing
+2837	Wing_L5_Vein_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Length of the L5 vein in the wing
+2838	Wing_L6_Vein_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Length of the L6 vein in the wing
+2839	Wing_PCV_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Wing Posterior Crossvein (PCV) length 
+2840	Wing_ACV_Length	34	Vonesch et al., 2016	integrated	raw	1	149	149	149	0	true	true	NA	mm	Wing Anterior Crossvein (ACV) length
+2841	mn_Dev_Time	37	Zhou et al., 2016	integrated	summary		198	198	198	0	true	true	mean	Days	Development time for larvae placed on control medium
+2842	mn_Viability	37	Zhou et al., 2016	integrated	summary		200	0	0	200	true	true	mean	Proportion / Ratio	Viability of flies placed on control medium
+2843	mn_Dev_Time_Lead	37	Zhou et al., 2016	integrated	summary		190	185	190	0	true	true	mean	Days	Development time for larvae placed on medium supplemented with 0.5 mM lead acetate (lead-poisoned food)
+2844	mn_Viability_Lead	37	Zhou et al., 2016	integrated	summary		199	0	0	199	true	true	mean	Proportion / Ratio	Viability of flies placed on medium supplemented with 0.5 mM lead acetate (lead-poisoned food)
+2845	mn_Tot_Activity	37	Zhou et al., 2016	integrated	summary		166	166	166	0	true	true	mean	s	Total activity time for flies placed on control medium
+2846	mn_Tot_Activity_Lead	37	Zhou et al., 2016	integrated	summary		166	166	166	0	true	true	mean	s	Total activity time for flies placed on medium supplemented with 0.5 mM lead acetate (lead-poisoned food)
+2847	Climbing_Index_CTRL	41	Watanabe et al., 2021	integrated	raw	1	35	35	33	0	true	true	NA	NA	Climbing index of the control flies
+2852	Climbing_Index_T	41	Watanabe et al., 2021	integrated	raw	1	35	35	35	0	true	true	NA	NA	Climbing index of the flies subjected to 2h/day exercise sessions
+2858	Lifespan_18C	40	Huang et al., 2020	integrated	raw	1	183	183	183	0	true	true	NA	Days	Lifespan at 18°C thermal environment
+2859	Lifespan_25C	40	Huang et al., 2020	integrated	raw	1	186	186	186	0	true	true	NA	Days	Lifespan at 25°C thermal environment
+2860	Lifespan_28C	40	Huang et al., 2020	integrated	raw	1	177	177	177	0	true	true	NA	Days	Lifespan at 28°C thermal environment
+2870	Ave_Mating_Latency	42	Hope et al., 2019	accepted	summary		41	41	41	0	true	true	NA	NA	
+2871	Ave_Time_Grooming	42	Hope et al., 2019	accepted	summary		40	40	40	0	true	true	NA	NA	
+2872	Ave_Social_Space	42	Hope et al., 2019	accepted	summary		41	41	41	0	true	true	NA	NA	
+2874	MatingLatency	42	Hope et al., 2019	accepted	raw	1	42	42	41	0	true	true	NA	NA	
+2875	TimeGrooming	42	Hope et al., 2019	accepted	raw	1	40	40	40	0	true	true	NA	NA	
+2876	SocialSpace	42	Hope et al., 2019	accepted	raw	1	41	41	41	0	true	false	NA	NA	
