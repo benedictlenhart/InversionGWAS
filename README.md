@@ -5,12 +5,9 @@ Repository of data files and scripts from the Inversion-trait association and GW
 
 Supplementary Table 1: Gives meta data for the studies and phenotypes used in the manuscript.
 
-  -Inversion? indicates if the study makes mention of inversions
-  
-  -Factored_out indicates if the study factored out inversions prior to GWAS
-  
-  -Anova indicates if the study reports any anova findings of inversion presence on their trait, signficant or no
-  
-  -linear_model:X indicates if inversion X was significant on a given trait under the linear models
-  
-  -Significantly_associated:X if a given trait is considered part of the group mentioned as signifcantly associated with inversion X in the paper 
+Supplementary Table 2: Reference table for Inversion genotypes of DGRP lines used in the study
+
+Supplementary Table 3: PCA output for traits highly associated with inversions
+
+DGRP.GDS.Zip- zipped file containing the genome information of the DGRP lines used
+grm.aug- a Genomic Relatedness Matrix originally obtained from the DGRP's GWAS website. 
