@@ -1,5 +1,6 @@
 # InversionGWAS
-Repository of data files and scripts from the Inversion-trait association and GWAS project within the DGRP
+Repository of data files and scripts from the Inversion-trait association and GWAS project within the DGRP.
+The scripts used throughout the analysis are present in their corresponding figure, along with the files needed to generate the figure. 
 
 **Description of Files**
 
