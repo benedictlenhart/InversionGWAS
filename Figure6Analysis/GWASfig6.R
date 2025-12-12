@@ -5,7 +5,7 @@ library(foreach)
 library(doParallel)
 library(tidyverse)
 setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/Feb_2025_objects/")
-cd = readRDS("colocpca.1.3.fullgenome")
+#cd = readRDS("colocpca.1.3.fullgenome")
 cd = readRDS("colocpca.1.4.fullgenome")
 cd = rbindlist(cd[-c(5,10)])#3rp failed due to so few data
 setwd("/Users/supad/OneDrive/Documents/Bergland Research/R_data_objects/Nov_2024_objects/")
@@ -93,3 +93,4 @@ ggsave((g1 + g2 +
        filename = "Fig6fac.pdf", width = 10, height = 7 )
 #where are these peaks?
 groupdata[method == "LOCO"][inv %in% c("2Lt","In(3R)Mo")][h4 > 0.4]
+
