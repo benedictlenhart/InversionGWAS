@@ -102,7 +102,7 @@ fullprop2 = fullprop2 %>%
                            trait == "LowestPvalue" ~ "LowestPvalue",
                            trait == "SNpcount" ~ "#ofHits")) %>% 
   filter(grm != "None",
-         trait == "#ofHits") %>% 
+         trait %in% c( "#ofHits", "GIF") %>% 
  
   as.data.table(.)
 
@@ -130,7 +130,7 @@ g1 = ggplot() +
   ylab("Proportion exceeding permutations") +
   xlab("Methods") +
   # scale_color_manual(values = colors)+
-  facet_grid(. ~ chromosome) +
+  facet_grid(trait ~ chromosome) +
   scale_color_manual( values = g1colors) +
   geom_errorbar(data = fullprop2, aes(
     x= grm,
@@ -385,3 +385,4 @@ en[,or:=(TT/TF)/(FT/FF)]
 en[,fet.p:=apply(en, 1, function(x) fisher.test(matrix(as.numeric(c(x[5], x[6], x[7], x[8])), byrow=T, nrow=2))$p.value)]
 
 sig.en.sig = en[fet.p < 0.05]
+
