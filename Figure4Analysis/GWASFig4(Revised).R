@@ -9,7 +9,7 @@ library(doMC)
 
 fullout = readRDS("/project/berglandlab/Adam/etoh.summary.RDS")
 gwas = readRDS("/project/berglandlab/Adam/etoh.g2")
-fullprop2 = readRDS("/project/berglandlab/Adam/fall2023objects/gwasfig4.data")
+fullprop2 = readRDS("/project/berglandlab/Adam/fall2023objects/gif.snpdata")
 
 colors = c("grey","cyan")
 #create boxplot
